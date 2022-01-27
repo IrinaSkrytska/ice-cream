@@ -1,0 +1,35 @@
+$main-color__bright-pink: #d41443;
+$main-color__pale-pink: #ffa5ba;
+$main-color__white: #fff;
+$main-color__grey: #907e82;
+$main-color__black: #000;
+$main-color__peach: #ffb8ca;
+$main-color__green: #c2e297;
+$background-color__pink: #ffb8ca;
+$background-color__white: #e5e5e5;
+$background-color__ivory: #fff5f6;
+
+%space-between-content {
+  display: flex;
+  justify-content: space-between;
+}
+%column-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+%centered-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+%space-around-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-around;
+}
+%width-height {
+  width: 100%;
+  height: 100%;
+}
