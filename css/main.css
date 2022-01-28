@@ -207,6 +207,7 @@ button {
   left: 0;
   width: 100%;
   height: 100%;
+  max-height: 502px;
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 998;
   opacity: 0;
@@ -230,13 +231,15 @@ button {
 
 .mobile-menu__content {
   position: absolute;
+  width: 250px;
   right: 0;
   top: 0;
   padding: 60px 0;
   height: 100%;
   text-align: center;
   background-color: #e17992;
-  width: 250px;
+  -webkit-filter: drop-shadow(-8px 0px 20px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(-8px 0px 20px rgba(0, 0, 0, 0.25));
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
   -webkit-transition: -webkit-transform 200ms linear 100ms;
@@ -251,12 +254,23 @@ button {
 }
 
 .mobile-menu__button {
+  display: inline-block;
+  cursor: pointer;
   max-width: 209px;
   width: 100%;
   padding: 12px 49px;
-  margin-left: 21px;
-  margin-right: 21px;
-  margin-bottom: 20px;
+  margin: 0 21px 20px 21px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.3;
+  color: #d41443;
+  background-color: #fff;
+  border: 0;
+  border-radius: 22px;
+}
+
+.mobile-menu__button:hover, .mobile-menu__button:focus {
+  background-color: #ecebeb;
 }
 
 .mobile-menu__item {
