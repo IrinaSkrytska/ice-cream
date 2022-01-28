@@ -38,8 +38,6 @@ body {
 .hero__button, .nav__link {
   text-decoration: none;
   font-style: normal;
-  font-size: 14px;
-  line-height: 1.3;
 }
 
 .nav__list {
@@ -75,7 +73,7 @@ button {
   position: relative;
   min-height: 502px;
   background-color: #ffb8ca;
-  background-image: url(..//..//..//src/images/header/circle346.png);
+  background-image: url(../images/circle346.png);
   background-repeat: no-repeat;
   background-position: right 0 bottom 75px;
 }
@@ -152,10 +150,6 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.nav__logo {
-  display: block;
 }
 
 .nav__menu-button {
