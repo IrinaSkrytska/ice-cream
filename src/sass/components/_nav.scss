@@ -3,6 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 20px;
 
   &__logo-link {
   }
@@ -19,6 +20,10 @@
     background-color: transparent;
     border: 0;
     z-index: 999;
+
+    @media screen and (min-width: $desktop) {
+      display: none;
+    }
   }
 
   &__menu-button &__icon-cross {
@@ -46,59 +51,5 @@
     width: 14px;
     height: 14px;
     color: currentColor;
-  }
-
-  &__mobile-menu {
-    display: none;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-
-    padding: 60px 0;
-    background-color: #e17992;
-
-    &.is-open {
-      display: block;
-      z-index: 998;
-    }
-  }
-
-  &__button {
-    max-width: 209px;
-    width: 100%;
-    padding: 12px 49px;
-    margin-left: 21px;
-    margin-right: 21px;
-    margin-bottom: 20px;
-
-    &::after {
-    }
-  }
-
-  &__list {
-    @extend %list;
-  }
-
-  &__item {
-    padding: 12px 20px;
-    text-align: left;
-  }
-
-  &__item:nth-child(2n - 1) {
-    border-top: 1px solid #e18298;
-    border-bottom: 1px solid #e18298;
-  }
-
-  &__link {
-    @extend %link;
-    color: #fff;
-
-    &:hover,
-    &:focus {
-      color: #d41443;
-    }
   }
 }
