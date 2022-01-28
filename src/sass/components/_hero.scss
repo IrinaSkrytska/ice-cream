@@ -1,0 +1,76 @@
+// Hero section
+.hero {
+  position: relative;
+  min-height: 502px;
+  background-color: #ffb8ca;
+  //   background-image: url(../images/ice171.png), url(../images/circle346.png);
+  background-image: url(../images/circle346.png);
+  background-repeat: no-repeat;
+  //   background-position: right 32px bottom 0, right 0 bottom 75px;
+  background-position: right 0 bottom 75px;
+
+  &__wrapper {
+    padding: 137px 0 0 0;
+    z-index: 2;
+  }
+
+  &__title {
+    font-family: 'Titan One', 'Arial', sans-serif;
+    font-size: 26px;
+    line-height: 1.2;
+    font-weight: normal;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0 0 20px 0;
+  }
+
+  &__title-decoration {
+    font-size: 47px;
+    color: #d41443;
+  }
+
+  &__button {
+    @extend %link;
+
+    &.btn {
+      font-size: 8px;
+      line-height: 1.25;
+      padding: 7px 14px;
+      color: #fff;
+      background-color: #d41443;
+      border-radius: 20px;
+    }
+
+    &.btn:hover,
+    &.btn:focus {
+      background-color: #c7133e;
+    }
+
+    &.btn-revers {
+      font-size: 8px;
+      line-height: 1.25;
+      padding: 7px 14px;
+      color: #d41443;
+      background-color: #fff;
+      border-radius: 20px;
+    }
+
+    &.btn-revers:hover,
+    &.btn-revers:focus {
+      background-color: #ecebeb;
+    }
+  }
+
+  &__butto:first-child {
+    margin-right: 8px;
+  }
+
+  &__main-img {
+    position: absolute;
+    display: block;
+    right: 32px;
+    bottom: 0px;
+    //   z-index: 1;
+  }
+}
