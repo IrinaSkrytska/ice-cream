@@ -73,16 +73,39 @@ button {
 
 .hero {
   position: relative;
+  width: 100%;
+  margin: 0 auto;
   min-height: 502px;
-  background-color: #ffb8ca;
   background-image: url(..//..//..//src/images/header/circle346.png);
   background-repeat: no-repeat;
   background-position: right 0 bottom 75px;
+  background-color: #ffb8ca;
+}
+
+@media screen and (max-width: 767px) {
+  .hero {
+    max-width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    width: 768px;
+    background-image: url(..//..//..//src/images/header/circle324.png);
+    background-position: right 137px bottom 46px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    width: 1200px;
+    background-image: url(..//..//..//src/images/header/circle538.png);
+    background-position: right 267px bottom 75px;
+  }
 }
 
 .hero__wrapper {
   padding: 137px 0 0 0;
-  z-index: 2;
 }
 
 .hero__title {
@@ -134,8 +157,23 @@ button {
 .hero__main-img {
   position: absolute;
   display: block;
+  width: 171px;
   right: 32px;
   bottom: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__main-img {
+    width: 143px;
+    right: 247px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__main-img {
+    width: 236px;
+    right: 450px;
+  }
 }
 
 .header {
@@ -152,7 +190,6 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 20px;
 }
 
 .nav__logo {
