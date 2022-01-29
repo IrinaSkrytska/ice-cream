@@ -15,13 +15,13 @@
   //   background-image: url(..//..//..//src/images/header/circle346@2x.png);
   // }
 
-  @media screen and (max-width: $tablet - 1px) {
+  @media screen and (max-width: 767px) {
     max-width: $mobile;
   }
 
   @media screen and (min-width: $tablet) {
     width: $tablet;
-    background-image: url(..//..//..//src/images/header/circle324.png);
+    background-image: url(../images/header/circle324.png);
     background-position: right 137px bottom 46px;
 
     // @media screen and (min-device-pxel-ratio: 2),
