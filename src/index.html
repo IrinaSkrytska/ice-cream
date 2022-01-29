@@ -4,12 +4,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
     crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Titan+One&display=swap"
     rel="stylesheet" />
-  <link rel="stylesheet" href="..//css/main.min.css" />
+  <link rel="stylesheet" href="./main.min.css" />
 </head>
 
 <body>
@@ -86,39 +87,9 @@
   <!-- hero end -->
 
   <!-- добавляются фрагменты в главные HTML-файлы страниц. -->
-  <!-- Section 4	Advantages  -->
-  <section class="advantages container">
-    <h2 class="advantages__title">Advantages</h2>
-    <ul class="advantages__content">
-      <li class="advantages__milk">
-        <h3 class="advantages__numbers">
-          721
-        </h3>
+  <include src="partials/advantages.html"></include>
+  <include src="partials/gallery.html"></include>
 
-        <p class="advantages__description">
-          Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
-        </p>
-      </li>
-      <li class="advantages__fruits">
-        <h3 class="advantages__numbers">
-          16kg
-        </h3>
-
-        <p class="advantages__description">
-          Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
-        </p>
-      </li>
-      <li class="advantages__candy">
-        <h3 class="advantages__numbers">
-          84
-        </h3>
-
-        <p class="advantages__description">
-          Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
-        </p>
-      </li>
-    </ul>
-  </section>
   <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
   <script src="./index.js"></script>
   <script src="./js/mobile-menu.js"></script>
