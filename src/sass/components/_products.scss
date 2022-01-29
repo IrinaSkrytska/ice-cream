@@ -61,6 +61,7 @@
 }
 .products {
   display: flex;
+  justify-content: center;
   width: 100%;
 
   @media screen and (max-width: 768px) {
@@ -155,7 +156,7 @@
 
 .products__card--icecream::before {
   content: '';
-  background-image: url(../../images/products/home-pic1-m@2x.png);
+  background-image: url(../images/products/home-pic1-m@2x.png);
   background-position: center;
   display: inline-block;
   height: 252px;
@@ -165,14 +166,14 @@
   transform: translate(-10%, -45%);
 
   @media screen and (min-width: 768px) {
-    background-image: url(../../images/products/home-pic1-t@2x.png);
+    background-image: url(../images/products/home-pic1-t@2x.png);
     height: 226px;
     width: 220px;
     transform: translate(-5%, -46%);
   }
 
   @media screen and (min-width: 1200px) {
-    background-image: url(../../images/products/home-pic1-d@2x.png);
+    background-image: url(../images/products/home-pic1-d@2x.png);
     height: 335px;
     width: 335px;
     transform: translate(-13%, -63%);
@@ -180,7 +181,7 @@
 }
 .products__card--icecoffee::before {
   content: '';
-  background-image: url(../../images/products/home-pic2-m@2x.png);
+  background-image: url(../images/products/home-pic2-m@2x.png);
   background-position: center;
   display: inline-block;
   height: 252px;
@@ -190,14 +191,14 @@
   transform: translate(-10%, -45%);
 
   @media screen and (min-width: 768px) {
-    background-image: url(../../images/products/home-pic2-t@2x.png);
+    background-image: url(../images/products/home-pic2-t@2x.png);
     height: 233px;
     width: 220px;
     transform: translate(-5%, -46%);
   }
 
   @media screen and (min-width: 1200px) {
-    background-image: url(../../images/products/home-pic2-d@2x.png);
+    background-image: url(../images/products/home-pic2-d@2x.png);
     height: 335px;
     width: 337px;
     transform: translate(-13%, -63%);
@@ -205,7 +206,7 @@
 }
 .products__card--milkshakes::before {
   content: '';
-  background-image: url(../../images/products/home-pic3-m@2x.png);
+  background-image: url(../images/products/home-pic3-m@2x.png);
   background-position: center;
   display: inline-block;
   height: 252px;
@@ -215,14 +216,14 @@
   transform: translate(-10%, -45%);
 
   @media screen and (min-width: 768px) {
-    background-image: url(../../images/products/home-pic3-t@2x.png);
+    background-image: url(../images/products/home-pic3-t@2x.png);
     height: 224px;
     width: 220px;
     transform: translate(-5%, -46%);
   }
 
   @media screen and (min-width: 1200px) {
-    background-image: url(../../images/products/home-pic3-d@2x.png);
+    background-image: url(../images/products/home-pic3-d@2x.png);
     height: 335px;
     width: 335px;
     transform: translate(-13%, -63%);
@@ -269,7 +270,7 @@
   border: transparent;
   width: 40px;
   height: 40px;
-  background-image: url(../../images/products/arrow-right.png);
+  background-image: url(../images/products/arrow-right.png);
   cursor: pointer;
   margin-bottom: 41px;
 
@@ -288,7 +289,7 @@
   background-position: center;
   width: 26px;
   height: 6px;
-  background-image: url(../../images/products/points.svg);
+  background-image: url(../images/products/points.svg);
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
