@@ -1,9 +1,8 @@
 body {
-  font-family: "DM Sans", sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-style: normal;
   font-size: 16px;
 }
-
 .container {
   padding: 0 15px;
   margin: 0 auto;
@@ -13,17 +12,16 @@ body {
     width: 480px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .container {
     width: 768px;
   }
 }
-@media screen and (min-width: 1201px) {
+@media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
   }
 }
-
 .hidden {
   overflow: hidden;
   opacity: 0;
@@ -31,26 +29,23 @@ body {
   height: 1px;
   margin-bottom: -1px;
 }
-
 *,
 *::after,
 *::before {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
-
 a {
   text-decoration: none;
   cursor: pointer;
 }
-
 ul li {
   list-style: none;
 }
-
 button {
   border: none;
   cursor: pointer;
-}/*# sourceMappingURL=main.css.map */
+}
+/*# sourceMappingURL=main.min.css.map */
