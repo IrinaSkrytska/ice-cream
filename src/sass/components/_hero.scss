@@ -3,11 +3,13 @@
   position: relative;
   width: 100%;
   margin: 0 auto;
-  min-height: 502px;
-  background-image: url(..//..//..//src/images/header/circle346.png);
-  background-repeat: no-repeat;
-  background-position: right 0 bottom 75px;
   background-color: #ffb8ca;
+
+  @media screen and (max-width: $tablet - 1px) {
+    background-image: url(../images/header/circle346.png);
+    background-position: right 0 bottom 75px;
+    background-repeat: no-repeat;
+  }
 
   // @media screen and (min-device-pxel-ratio: 2),
   //   screen and (min-resolution: 192dpi),
@@ -15,37 +17,52 @@
   //   background-image: url(..//..//..//src/images/header/circle346@2x.png);
   // }
 
-  @media screen and (max-width: 767px) {
-    max-width: $mobile;
-  }
+  & .container {
+    position: relative;
+    height: 502px;
+    background-repeat: no-repeat;
 
-  @media screen and (min-width: $tablet) {
-    width: $tablet;
-    background-image: url(../images/header/circle324.png);
-    background-position: right 137px bottom 46px;
+    @media screen and (max-width: $tablet - 1px) {
+      max-width: $mobile;
+      padding: 0 20px;
+    }
 
-    // @media screen and (min-device-pxel-ratio: 2),
-    //   screen and (min-resolution: 192dpi),
-    //   screen and (min-resolution: 2dppx) {
-    //   background-image: url(..//..//..//src/images/header/circle324@2x.png);
-    // }
-  }
+    @media screen and (min-width: $tablet) {
+      width: $tablet;
+      height: 399px;
+      padding: 0 34px;
+      background-image: url(../images/header/circle324.png);
+      background-position: right 137px bottom 46px;
 
-  @media screen and (min-width: $desktop) {
-    width: $desktop;
-    background-image: url(..//..//..//src/images/header/circle538.png);
-    background-position: right 267px bottom 75px;
+      // @media screen and (min-device-pxel-ratio: 2),
+      //   screen and (min-resolution: 192dpi),
+      //   screen and (min-resolution: 2dppx) {
+      //   background-image: url(..//..//..//src/images/header/circle324@2x.png);
+      // }
+    }
 
-    // @media screen and (min-device-pxel-ratio: 2),
-    //   screen and (min-resolution: 192dpi),
-    //   screen and (min-resolution: 2dppx) {
-    //   background-image: url(..//..//..//src/images/header/circle538@2x.png);
-    // }
+    @media screen and (min-width: $desktop) {
+      width: $desktop;
+      height: 665px;
+      padding: 0 46px;
+      background-image: url(../images/header/circle538.png);
+      background-position: right 267px bottom 75px;
+
+      // @media screen and (min-device-pxel-ratio: 2),
+      //   screen and (min-resolution: 192dpi),
+      //   screen and (min-resolution: 2dppx) {
+      //   background-image: url(..//..//..//src/images/header/circle538@2x.png);
+      // }
+    }
   }
 
   &__wrapper {
     padding: 137px 0 0 0;
     // z-index: 2;
+
+    @media screen and (min-width: $tablet) {
+      padding: 15px 0 0 0;
+    }
   }
 
   &__title {
