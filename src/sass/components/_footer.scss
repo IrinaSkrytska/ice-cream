@@ -1,4 +1,79 @@
-.footer-icons__facebook {
-  fill: green;
-  border-radius: 50%;
+.footer {
+  background-color: $background-color__ivory;
+  padding-top: 113px;
+}
+
+.footer__title {
+  margin-bottom: 43px;
+  padding-right: 51px;
+  margin-left: 5px;
+}
+
+.footer__title-one {
+  display: inline-block;
+  font-family: Titan One;
+  margin-bottom: 17px;
+
+  font-size: 18px;
+  line-height: 1.17;
+  text-transform: uppercase;
+  color: $main-color__pale-pink;
+}
+
+.footer_title-two {
+  display: inline-block;
+  font-family: Titan One;
+  font-size: 34px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: $main-color__bright-pink;
+}
+
+.footer-icons__block {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 5px;
+  margin-bottom: 46px;
+}
+
+.footer-icons__item:not(:last-child) {
+  margin-right: 28.24px;
+}
+
+.footer-icons {
+  fill: $icons-color__pink;
+}
+
+.footer__contact {
+  display: block;
+  font-family: DM Sans;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 1.86;
+  text-align: right;
+
+  color: $main-color__black;
+
+  margin-bottom: 43px;
+
+}
+
+.footer__phone {
+  color: $main-color__bright-pink;
+}
+
+.footer__rights {
+  position: relative;
+  background-color: $background-color__ivory;
+  text-align: center;
+  margin: 0px -15px 0 -15px;
+  padding: 22px 76px 25px 64px;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.52;
+  color: $main-color__grey;
+  border-top: 1px solid #E1E1E1;
 }
