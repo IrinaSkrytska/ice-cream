@@ -1,41 +1,88 @@
-<section id="about" class="about-section ">
+<section id="about" class="about-section">
 
-    <div class="about-container container">
+    <div class="about-container ">
         <h2 class="about-section__label">tradition and love</h2>
         <h1 class="about-section__title">how it’s made?</h1>
 
-        <div class="about-section__main-info">
+        <div class="about-section__main-info about-overlay">
             <!-- <img class="about-section__img" srcset="../images/about/home-pic4-1.png 379w, ../images/about/home-pic4-1-2x.png 768w"
                 sizes="50vw" sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
                 src="../images/about/home-pic4-1.png" alt="home-pic-4-1" > -->
 
 
                 <picture>
-                    <source media="(min-width: 320px)" srcset="./images/about/home-pic4-1.png 1x, ./images/about/home-pic4-1.png 2x">
-                    <img src="./images/about/home-pic4-1.png">
+                    <source media="(min-width: 1200px)"
+                        srcset="./images/about/about-main-pc-pic.png 1x, ./images/about/about-main-pc-pic-2x.png 2x">
+                    <source media="(min-width: 768px)"
+                        srcset="./images/about/about-main-tablet-pic.png 1x, ./images/about/about-main-tablet-pic-2x.png 2x">
+                    <source media="(min-width: 320px)" srcset="./images/about/about-main-mob-pic.png 1x, ./images/about/about-main-mob-pic-2x.png 2x">
+                    <img src="./images/about/about-main-mob-pic.png">
                 </picture>
 
             <div class="about-section__descriptions">
-                <p class="about-section__first-description">Fusce ut velit laoreet, tempus arcu eu, molestie tortor.
-                    Nam vel justo
-                    cursus, faucibus lorem eget, egestas eros.
-                    Maecenas eleifend erat at justo fringilla.</p>
+             
+                    <p class="about-section__first-description">Fusce ut velit laoreet, tempus arcu eu, molestie tortor.
+                        Nam vel justo
+                        cursus, faucibus lorem eget, egestas eros.
+                        Maecenas eleifend erat at justo fringilla.</p>
+                    
+                    <p class="about-section__second-description">Curabitur lacinia enim at ex blandit, vel pellentesque
+                        odio elementum.
+                        Mauris rhoncus orci in imperdiet placerat.
+                        Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
+                        tincidunt.
+                    
+                    
+                        Aliquam erat volutpat. Aenean accumsan.</p>
+               
 
-                <p class="about-section__second-description">Curabitur lacinia enim at ex blandit, vel pellentesque
-                    odio elementum.
-                    Mauris rhoncus orci in imperdiet placerat.
-                    Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
-                    tincidunt.
 
-
-                    Aliquam erat volutpat. Aenean accumsan.</p>
-
-
-                <button type="button" class="about__button" data-modal-open>Read more</button>
+                <button type="button" class="about__button" data-modal-open>Read more ></button>
             </div>
         </div>
 
     </div>
 
+    <div class="about-backdrop is-hidden" data-modal>
+    
+        <div class="about-modal">
+            <button data-modal-close class="about-modal__close-button">
+                <svg class="modal__close-icon">
+                    <use href="./images/about/form-sprite.svg#icon-close-button"></use>
+                </svg>
+            </button>
+
+            <h3 class="about-modal__title">
+                What is milk made from?
+            </h3>
+
+            <p class="about-modal__text"> 
+                It would seem a strange question, because everyone knows that a cow gives milk, but take your time
+            </p>
+
+
+        </div>
+    
+    
+    </div>
+
+    <script>
+        (() => {
+                const refs = {
+                    openModalBtn: document.querySelector('[data-modal-open]'),
+                    closeModalBtn: document.querySelector('[data-modal-close]'),
+                    modal: document.querySelector('[data-modal]'),
+                };
+
+                refs.openModalBtn.addEventListener('click', toggleModal);
+                refs.closeModalBtn.addEventListener('click', toggleModal);
+
+                function toggleModal() {
+                    refs.modal.classList.toggle('is-hidden');
+                }
+            })();
+    </script>
+
 
 </section>
+
