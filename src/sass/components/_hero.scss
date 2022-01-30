@@ -4,7 +4,7 @@
   width: 100%;
   height: 502px;
   margin: 0 auto;
-  background-color: #ffb8ca;
+  background-color: $background-color__pink;
 
   @media screen and (max-width: $tablet - 1px) {
     background-image: url(../images/header/circle346.png);
@@ -134,7 +134,7 @@
     font-weight: normal;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #fff;
+    color: $main-color__white;
     margin-bottom: 19px;
 
     @media screen and (min-width: $tablet) {
@@ -151,7 +151,7 @@
   &__title-decoration {
     font-size: 47px;
     line-height: 0.9;
-    color: #d41443;
+    color: $main-color__bright-pink;
 
     @media screen and (min-width: $tablet) {
       font-size: 35px;
@@ -177,23 +177,23 @@
     }
 
     &.btn {
-      color: #fff;
-      background-color: #d41443;
+      color: $main-color__white;
+      background-color: $main-color__bright-pink;
     }
 
     &.btn:hover,
     &.btn:focus {
-      background-color: #c7133e;
+      background-color: $primary-button-hover;
     }
 
     &.btn-revers {
-      color: #d41443;
-      background-color: #fff;
+      color: $main-color__bright-pink;
+      background-color: $main-color__white;
     }
 
     &.btn-revers:hover,
     &.btn-revers:focus {
-      background-color: #ecebeb;
+      background-color: $secondary-button-hover;
     }
   }
 

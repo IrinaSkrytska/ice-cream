@@ -39,7 +39,7 @@
     padding: 60px 0;
     height: 100%;
     text-align: center;
-    background-color: #e17992;
+    background-color: $mob-menu-background;
     filter: drop-shadow(-8px 0px 20px rgba(0, 0, 0, 0.25));
 
     transform: translateX(100%);
@@ -76,7 +76,7 @@
 
     &:hover,
     &:focus {
-      background-color: #ecebeb;
+      background-color: $secondary-button-hover;
     }
 
     @media screen and (min-width: $tablet) {
@@ -94,17 +94,17 @@
   }
 
   &__item:nth-child(2n - 1) {
-    border-top: 1px solid #e18298;
-    border-bottom: 1px solid #e18298;
+    border-top: 1px solid $mob-menu-border;
+    border-bottom: 1px solid $mob-menu-border;
   }
 
   &__link {
     @extend %link;
-    color: #fff;
+    color: $main-color__white;
 
     &:hover,
     &:focus {
-      color: #d41443;
+      color: $main-color__bright-pink;
     }
   }
 }
