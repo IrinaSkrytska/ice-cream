@@ -1,0 +1,97 @@
+.slick-slide{
+    display: flex;
+    flex-direction: column;
+}
+
+.slider{
+    display: flex;
+    justify-content: center;
+}
+
+.photo{
+    max-width: 85px;
+    border-radius: 50%;
+    margin-bottom: 29px;
+
+    @media screen and (min-width:768px) {
+        margin-bottom: 19px;
+    }
+
+    @media screen and (min-width:1200px) {
+        margin-bottom: 15px;
+    } 
+}
+
+.name{
+    margin-bottom: 30px;
+
+    @media screen and (min-width:768px) {
+        margin-bottom: 35px;
+    }
+
+    @media screen and (min-width:1200px) {
+        margin-bottom: 35px;
+    } 
+}
+
+.paper{
+    background: var(--paper-bg);    
+    max-width: 280px;
+    padding: 43px 50px 26px 50px;
+    margin-bottom: 52px;
+    background-image: url("/images/customers-reviews/upperdots.svg") ; 
+    background-repeat: no-repeat;
+    background-position: left 21px top 28px;
+    position: relative;
+    
+    @media screen and (min-width:768px) {
+        padding: 47px 80px 34px 80px;
+        max-width: 620px;
+        margin-bottom: 42px;
+    }
+
+    @media screen and (min-width:1200px) {
+        padding: 47px 87px 39px 89px;
+        max-width: 926px;
+        margin-bottom: 34px;
+    }
+
+    &::after{
+        content: '• • •';
+        color: var(--slider-decor-dots-cl);
+        position: absolute;
+        bottom: -37px;
+        right: 47%;
+
+        @media screen and (min-width:768px) {
+            right: 48.5%;
+            bottom: -32px;
+        }
+
+        @media screen and (min-width:1200px) {
+            right: 49%;
+            bottom: -30px;
+        }
+    }
+}
+
+.pattern{
+    text-align: center;
+    height: 100%;
+    background-image: repeating-linear-gradient(transparent 0px, transparent 28px, #E1E1E1 30px);
+}
+
+.text{
+    
+    @include custom-text (12px, 500, 2.55, var(--slider-text-cl));
+
+    @media screen and (min-width:768px) {
+        margin-bottom: 24px;
+        @include custom-text (14px, 500, 2.16, var(--slider-text-cl));
+    }
+
+    @media screen and (min-width:1200px) {
+        margin-bottom: 15px;
+        @include custom-text (16px, 500, 1.86, var(--slider-text-cl));
+    } 
+}
