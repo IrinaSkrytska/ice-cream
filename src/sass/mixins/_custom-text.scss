@@ -1,0 +1,6 @@
+@mixin custom-text($f-size, $f-weight, $line-h, $color ) { // Custom text options.
+	font-size: $f-size;
+	font-weight: $f-weight;
+	line-height: $line-h;
+	color: $color;
+}
