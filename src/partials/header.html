@@ -1,5 +1,11 @@
 <!-- hero start -->
 <section class="hero">
+    <div class="hero__ice-wrap">
+        <picture>
+            <source srcset="./images/header/ice171.png 1x, ./images/header/ice171@2x.png 2x">
+            <img class="hero__main-img" src="./images/header/ice171.png" alt="Моороженное">
+        </picture>
+    </div>
 
     <div class="container">
 
@@ -11,7 +17,10 @@
 
                 <!-- Logo -->
                 <a href="./index.html" class="nav__logo-link">
-                    <img class="nav__logo" src="./images/header/logo.png" width="200" alt="логотип">
+                    <picture>
+                        <source srcset="./images/header/logo.png 1x, ./images/header/logo@2x.png 2x">
+                        <img class="nav__logo" src="./images/header/logo.png" width="199" alt="логотип"> 
+                    </picture>
                 </a>
 
                 <div class="nav__menu-wrap">
@@ -34,6 +43,9 @@
                         </svg>
                     </button>
 
+                    <!-- Tablet/Desktop menu button -->
+                    <button class="nav__button" type="button">Buy now</button>
+
                     <!-- Mobile menu -->
                     <div class="mobile-menu" id="nav__mobile-menu" data-menu>
 
@@ -51,28 +63,15 @@
                         </div>
                     </div>
                     
-                    <!-- Tablet/Desktop menu button -->
-                    <button class="nav__button" type="button">Buy now</button>
+                   
                 </div>
 
             </nav>
 
         </div>
 
-        <!-- States right numbers -->
-        <ul class="hero__states-list">
-            <li class="hero__states-item">
-                <p class="hero__states-number">16</p>
-                <p class="hero__states-name">cafes</p>
-            </li>
-            <li class="hero__states-item">
-                <p class="hero__states-number">23</p>
-                <p class="hero__states-name">food trucks</p>
-            </li>
-        </ul>
-
-        <!-- Hero content -->
-        <div class="hero__wrapper">
+               <!-- Hero content -->
+        <div class="hero__wrapper">            
 
             <!-- Heto tittle -->
             <h1 class="hero__title">
@@ -85,31 +84,47 @@
             <a class="hero__button btn" href="">Products</a>
             <a class="hero__button btn-revers" href="">How it’s made?</a>
 
-            <picture>
-                <source srcset="./images/header/ice236.png 1x, ./images/header/ice236@2x.png 2x"
-                    media="(max-width: 1200px)">
-                <source srcset="./images/header/ice171.png 1x, ./images/header/ice171@2x.png 2x"
-                    media="(max-width: 767px)">
-                <source srcset="./images/header/ice143.png 1x, ./images/header/ice143@2x.png 2x"
-                    media="(min-width: 768px)">
-                <img class="hero__main-img" src="./images/header/ice171.png" alt="Моороженное">
-            </picture>
-
-            <picture>
-                <source srcset="./images/header/girld.png 1x, ./images/header/girld@2x.png 2x" media="(max-width: 1200px)">
-                <source srcset="./images/header/girlt.png 1x, ./images/header/girlt@2x.png 2x" media="(min-width: 768px)">
-                <img class="hero__girl-img" src="./images/header/girlt.png" alt="Девушка с мороженным">
-            </picture>
+            <!-- States right numbers -->
+            <ul class="hero__states-list">
+                <li class="hero__states-item">
+                    <p class="hero__states-number">16</p>
+                    <p class="hero__states-name">cafes</p>
+                </li>
+                <li class="hero__states-item">
+                    <p class="hero__states-number">23</p>
+                    <p class="hero__states-name">food trucks</p>
+                </li>
+            </ul>           
 
         </div>
 
-        <div class="hero__milk-block">
+        <div class="hero__ice-content-wrap">
             <picture>
-                <source srcset="./images/header/milkd.png 1x, ./images/header/milkd@2x.png 2x" media="(max-width: 1200px)">
-                <source srcset="./images/header/milkt.png 1x, ./images/header/milkt@2x.png 2x" media="(min-width: 768px)">
-                <img class="hero__milk-img" src="./images/header/milkt.png" alt="Кувшин с молоком">
+                <source media="(min-width: 1200px)" srcset="./images/header/ice236.png 1x, ./images/header/ice236@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="./images/header/ice143.png 1x, ./images/header/ice143@2x.png 2x">
+                <!-- <source media="(max-width: 767px)" srcset="./images/header/ice171.png 1x, ./images/header/ice171@2x.png 2x"> -->
+                <img class="hero__main-img" src="./images/header/ice171.png" alt="Моороженное">
             </picture>
+        </div>
         
+        <div class="hero__girl-wrap">
+            <picture>
+                <source media="(min-width:1200px)" srcset="./images/header/girld.png 1x, ./images/header/girld@2x.png 2x">
+                <source media="(min-width:768px)" srcset="./images/header/girlt.png 1x, ./images/header/girlt@2x.png 2x">
+                <img class="hero__girl-img" src="./images/header/girlt.png" alt="Девушка с мороженным">
+            </picture>
+        </div>
+
+        <div class="hero__milk-block">
+
+            <div class="hero__milk-wrap">
+                <picture>
+                    <source media="(min-width: 1200px)" srcset="./images/header/milkd.png 1x, ./images/header/milkd@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="./images/header/milkt.png 1x, ./images/header/milkt@2x.png 2x">
+                    <img class="hero__milk-img" src="./images/header/milkt.png" alt="Кувшин с молоком">
+                </picture>
+            </div>
+                    
             <div class="hero__milk-content">
                 <p class="hero__milk-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et</p>

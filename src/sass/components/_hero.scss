@@ -2,6 +2,7 @@
 .hero {
   position: relative;
   width: 100%;
+  height: 502px;
   margin: 0 auto;
   background-color: #ffb8ca;
 
@@ -11,19 +12,21 @@
     background-repeat: no-repeat;
   }
 
-  // @media screen and (min-device-pxel-ratio: 2),
-  //   screen and (min-resolution: 192dpi),
-  //   screen and (min-resolution: 2dppx) {
-  //   background-image: url(..//..//..//src/images/header/circle346@2x.png);
-  // }
+  @media screen and (min-width: $tablet) {
+    height: 399px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    height: 665px;
+  }
 
   & .container {
     position: relative;
-    height: 502px;
     background-repeat: no-repeat;
 
     @media screen and (max-width: $tablet - 1px) {
       max-width: $mobile;
+      height: 502px;
       padding: 0 20px;
     }
 
@@ -31,33 +34,17 @@
       width: $tablet;
       height: 399px;
       padding: 0 34px;
-      background-image: url(../images/header/circle324.png);
-      background-position: right 137px bottom 46px;
-
-      // @media screen and (min-device-pxel-ratio: 2),
-      //   screen and (min-resolution: 192dpi),
-      //   screen and (min-resolution: 2dppx) {
-      //   background-image: url(..//..//..//src/images/header/circle324@2x.png);
-      // }
     }
 
     @media screen and (min-width: $desktop) {
       width: $desktop;
       height: 665px;
       padding: 0 46px;
-      background-image: url(../images/header/circle538.png);
-      background-position: right 267px bottom 75px;
-
-      // @media screen and (min-device-pxel-ratio: 2),
-      //   screen and (min-resolution: 192dpi),
-      //   screen and (min-resolution: 2dppx) {
-      //   background-image: url(..//..//..//src/images/header/circle538@2x.png);
-      // }
     }
   }
 
   &__wrapper {
-    // position: relative;
+    position: relative;
     padding-top: 137px;
 
     @media screen and (min-width: $tablet) {
@@ -76,13 +63,13 @@
     @media screen and (min-width: $tablet) {
       display: inline-block;
       position: absolute;
-      right: 44px;
-      top: 96px;
+      right: 8px;
+      top: 14px;
     }
 
     @media screen and (min-width: $desktop) {
-      right: 115px;
-      top: 160px;
+      right: 69px;
+      top: 74px;
     }
   }
 
@@ -228,14 +215,17 @@
     }
   }
 
-  &__milk-img {
-    display: block;
+  &__milk-wrap {
     width: 124px;
 
     @media screen and (min-width: $desktop) {
       width: 188px;
       margin-right: 30px;
     }
+  }
+
+  &__milk-img {
+    display: block;
   }
 
   &__milk-content {
@@ -269,15 +259,26 @@
     }
   }
 
-  &__main-img {
-    position: absolute;
-    display: block;
-    width: 171px;
-    right: 32px;
-    bottom: 0px;
-    //   z-index: 1;
+  &__ice-wrap {
+    @media screen and (max-width: $tablet - 1px) {
+      position: absolute;
+      width: 171px;
+      right: 32px;
+      bottom: 0;
+    }
 
     @media screen and (min-width: $tablet) {
+      display: none;
+    }
+  }
+
+  &__ice-content-wrap {
+    display: none;
+
+    @media screen and (min-width: $tablet) {
+      display: block;
+      position: absolute;
+      bottom: 0px;
       width: 143px;
       right: 247px;
     }
@@ -288,12 +289,34 @@
     }
   }
 
-  &__girl-img {
-    display: none;
+  &__main-img {
+    display: block;
+    position: relative;
+  }
 
+  &__ice-content-wrap::before {
+    @media screen and (min-width: $tablet) {
+      content: '';
+      position: absolute;
+      background-color: $main-color__pale-pink;
+      border-radius: 50%;
+      width: 324px;
+      height: 322px;
+      right: -110px;
+      top: -32px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      width: 538px;
+      height: 538px;
+      right: -183px;
+      top: -56px;
+    }
+  }
+
+  &__girl-wrap {
     @media screen and (min-width: $tablet) {
       position: absolute;
-      display: block;
       width: 168px;
       right: 34px;
       bottom: 0;
@@ -302,6 +325,14 @@
     @media screen and (min-width: $desktop) {
       width: 293px;
       right: 109px;
+    }
+  }
+
+  &__girl-img {
+    display: none;
+
+    @media screen and (min-width: $tablet) {
+      display: block;
     }
   }
 }

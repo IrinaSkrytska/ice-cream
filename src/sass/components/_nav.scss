@@ -99,18 +99,24 @@
     display: none;
   }
 
+  &__menu-button.is-open {
+    @media screen and (min-width: $tablet) {
+      position: absolute;
+      top: 23px;
+      right: 34px;
+    }
+  }
+
+  &__menu-button.is-open ~ &__button {
+    display: none;
+  }
+
   &__menu-icon {
   }
 
   &__icon-menu {
-    width: 20px;
-    height: 12px;
-    color: currentColor;
   }
 
   &__icon-cross {
-    width: 14px;
-    height: 14px;
-    color: currentColor;
   }
 }
