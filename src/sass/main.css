@@ -7,6 +7,7 @@ body {
 .container {
   padding: 0 15px;
   margin: 0 auto;
+  width: 100%;
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .container {
@@ -68,18 +69,9 @@ img {
 .container-ice {
   padding-left: 20px;
   padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-}
-@media screen and (min-width: 480px) {
-  .container-ice {
-    width: 480px;
-  }
 }
 @media screen and (min-width: 768px) {
   .container-ice {
-    width: 768px;
     padding-left: 34px;
     padding-right: 34px;
   }
@@ -139,7 +131,6 @@ img {
     flex-wrap: wrap;
   }
 }
-
 @media screen and (min-width: 768px) {
   .products__item {
     flex-basis: calc((100% - 2 * 20px) / 3);
@@ -156,7 +147,6 @@ img {
     margin-right: 24px;
   }
 }
-
 .products__container--icecream {
   position: relative;
   margin-top: 144px;
@@ -171,7 +161,6 @@ img {
     margin-top: 259px;
   }
 }
-
 .products__container--icecoffee {
   position: relative;
   margin-top: 130px;
@@ -186,7 +175,6 @@ img {
     margin-top: 259px;
   }
 }
-
 .products__container--milkshakes {
   position: relative;
   margin-top: 129px;
@@ -201,7 +189,6 @@ img {
     margin-top: 259px;
   }
 }
-
 .products__card {
   border-radius: 24px;
   height: 485px;
@@ -230,13 +217,6 @@ img {
 .products__card--icecream {
   background-color: #ffb8ca;
 }
-.products__card--icecoffee {
-  background-color: #f0d1a5;
-}
-.products__card--milkshakes {
-  background-color: #c2e297;
-}
-
 .products__card--icecream::before {
   content: "";
   background-image: url(../images/products/home-pic1-m@2x.png);
@@ -264,7 +244,9 @@ img {
     transform: translate(-13%, -63%);
   }
 }
-
+.products__card--icecoffee {
+  background-color: #f0d1a5;
+}
 .products__card--icecoffee::before {
   content: "";
   background-image: url(../images/products/home-pic2-m@2x.png);
@@ -292,7 +274,9 @@ img {
     transform: translate(-13%, -63%);
   }
 }
-
+.products__card--milkshakes {
+  background-color: #c2e297;
+}
 .products__card--milkshakes::before {
   content: "";
   background-image: url(../images/products/home-pic3-m@2x.png);
@@ -320,12 +304,11 @@ img {
     transform: translate(-13%, -63%);
   }
 }
-
 .products__title {
   font-family: Titan One, sans-serif;
   font-size: 20px;
   line-height: 1.14;
-  color: #ffffff;
+  color: #fff;
   text-align: center;
   padding-top: 161px;
   margin-bottom: 30px;
@@ -340,12 +323,10 @@ img {
     padding-top: 163px;
   }
 }
-
 .products__text {
-  font-family: DM Sans, sans-serif;
   font-size: 14px;
   line-height: 1.5;
-  color: #ffffff;
+  color: #fff;
   text-align: center;
   margin-bottom: 30px;
 }
@@ -360,7 +341,17 @@ img {
     line-height: 1.8;
   }
 }
-
+.products__text::before {
+  content: "";
+  display: block;
+  background-position: center;
+  width: 26px;
+  height: 6px;
+  background-image: url(../images/products/points.svg);
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .products__button {
   display: flex;
   margin-left: auto;
@@ -384,16 +375,53 @@ img {
   }
 }
 
-.products__text::before {
-  content: "";
-  display: block;
-  background-position: center;
-  width: 26px;
-  height: 6px;
-  background-image: url(../images/products/points.svg);
-  margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
+.products__button:hover {
+  transform: scale(1.2);
+}
+
+.products__card--icecream:hover::before {
+  transform: scale(1.2);
+  transform: translate(-10%, -55%);
+}
+@media screen and (min-width: 768px) {
+  .products__card--icecream:hover::before {
+    transform: translate(-5%, -56%);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products__card--icecream:hover::before {
+    transform: translate(-13%, -73%);
+  }
+}
+
+.products__card--icecoffee:hover::before {
+  transform: scale(1.2);
+  transform: translate(-10%, -55%);
+}
+@media screen and (min-width: 768px) {
+  .products__card--icecoffee:hover::before {
+    transform: translate(-5%, -56%);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products__card--icecoffee:hover::before {
+    transform: translate(-13%, -73%);
+  }
+}
+
+.products__card--milkshakes:hover::before {
+  transform: scale(1.2);
+  transform: translate(-10%, -52%);
+}
+@media screen and (min-width: 768px) {
+  .products__card--milkshakes:hover::before {
+    transform: translate(-5%, -56%);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products__card--milkshakes:hover::before {
+    transform: translate(-13%, -73%);
+  }
 }
 
 .gallery__img {
