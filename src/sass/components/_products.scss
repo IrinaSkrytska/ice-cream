@@ -1,3 +1,9 @@
+.section-ice {
+  max-width: 1280px;
+  padding: 121px 0px 98px 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .container-ice {
   padding-left: 20px;
   padding-right: 20px;
@@ -336,4 +342,99 @@
   @media screen and (min-width: 1200px) {
     transform: translate(-13%, -73%);
   }
+}
+// ------Modal---------
+
+.backdrop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.9);
+}
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-color: $background-color__ivory;
+  border-radius: 24px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 40px;
+  width: 320px;
+  // max-height: 609px;
+
+  @media screen and (min-width: 321px) {
+    max-width: 450px;
+    max-height: 609px;
+    padding: 15px;
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    height: 609px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+  }
+}
+.modal-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  border-radius: 50%;
+  border: 1px solid $main-color__grey;
+  background-color: $background-color__ivory;
+
+  &.modal__button {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+  }
+}
+.icon-close {
+  width: 11px;
+  height: 11px;
+  fill: $main-color__grey;
+}
+.icon-close:hover,
+.icon-close:focus {
+  fill: $main-color__bright-pink;
+  cursor: pointer;
+}
+.modal__title {
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  color: $main-color__bright-pink;
+  font-family: Titan One, sans-serif;
+  line-height: 1.14;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.modal__text {
+  font-size: 16px;
+  line-height: 1.7;
+  text-align: center;
+  color: $main-color__grey;
 }
