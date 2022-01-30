@@ -164,7 +164,7 @@
       }
     }
     &--icecoffee {
-      background-color: #f0d1a5;
+      background-color: $main-color__coffee;
 
       &::before {
         content: '';
@@ -396,6 +396,23 @@
     width: 528px;
     height: 581px;
   }
+
+  &__title {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    color: $main-color__bright-pink;
+    font-family: Titan One, sans-serif;
+    line-height: 1.14;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: center;
+    color: $main-color__grey;
+  }
 }
 .modal-button {
   display: flex;
@@ -421,20 +438,4 @@
 .icon-close:focus {
   fill: $main-color__bright-pink;
   cursor: pointer;
-}
-.modal__title {
-  display: flex;
-  justify-content: center;
-  font-size: 24px;
-  color: $main-color__bright-pink;
-  font-family: Titan One, sans-serif;
-  line-height: 1.14;
-  margin-top: 40px;
-  margin-bottom: 20px;
-}
-.modal__text {
-  font-size: 16px;
-  line-height: 1.7;
-  text-align: center;
-  color: $main-color__grey;
 }
