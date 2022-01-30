@@ -1,4 +1,8 @@
 // Header section
 .header {
   padding-top: 6px;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 37px;
+  }
 }
