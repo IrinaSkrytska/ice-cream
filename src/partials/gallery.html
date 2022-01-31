@@ -1,18 +1,24 @@
 <section class="gallery">
-    <div class="gallery__img">
+  <div class="gallery__img">
+    <picture>
+      <source
+        media="(min-width:1200px)"
+        srcset="./images/gallery/gallery-desk.jpg 1x, ./images/gallery/gallery-desk@2x.jpg 2x"
+      />
+      <source
+        media="(min-width:768px)"
+        srcset="./images/gallery/gallery-tab.jpg 1x, ./images/gallery/gallery-tab@2x.jpg 2x"
+      />
+      <source
+        media="(min-width:480px)"
+        srcset="./images/gallery/gallery-desk.jpg 1x, ./images/gallery/gallery-desk@2x.jpg 2x"
+      />
 
-        <picture>
-            <source media="(min-width:1200px)"
-                srcset="./images/gallery/gallery-desk.jpg 1x, ./images/gallery/gallery-desk@2x.jpg 2x">
-            <source media="(min-width:768px)"
-                srcset="./images/gallery/gallery-tab.jpg 1x, ./images/gallery/gallery-tab@2x.jpg 2x">
-            <source media="(min-width:480px)"
-                srcset="./images/gallery/gallery-desk.jpg 1x, ./images/gallery/gallery-desk@2x.jpg 2x">
-
-
-
-            <img  class="gallery__picture" src="./images/gallery/gallery-desk.jpg" alt="picture with icecream">
-
-        </picture>
-    </div>
+      <img
+        class="gallery__picture"
+        src="./images/gallery/gallery-desk.jpg"
+        alt="picture with icecream"
+      />
+    </picture>
+  </div>
 </section>

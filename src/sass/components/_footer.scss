@@ -1,6 +1,7 @@
 .footer {
   background-color: $background-color__ivory;
   padding-top: 113px;
+  width: 100%;
 }
 
 .footer__title {
@@ -8,7 +9,7 @@
   padding-right: 51px;
   margin-left: 5px;
   display: flex;
-  flex-direction: column
+  flex-direction: column;
 }
 
 .footer__title-one {
@@ -93,7 +94,6 @@
   color: $main-color__black;
 
   margin-bottom: 43px;
-
 }
 
 .footer__phone {
@@ -111,13 +111,12 @@
   font-size: 14px;
   line-height: 1.52;
   color: $main-color__grey;
-  border-top: 1px solid #E1E1E1;
+  border-top: 1px solid #e1e1e1;
 }
 
 @media screen and (min-width: 768px) {
   .footer {
     padding-top: 158px;
-
   }
 
   .footer__contacts {
@@ -146,7 +145,6 @@
     font-size: 48px;
     line-height: 1.14;
     letter-spacing: 0.06em;
-
   }
 
   .footer-icons {
@@ -190,7 +188,6 @@
   .footer_title-two {
     font-size: 58px;
     line-height: 1.14;
-
   }
 
   .footer-icons__block {
@@ -204,6 +201,5 @@
   .footer__rights {
     padding-top: 9px;
     padding-bottom: 10px;
-
   }
 }
