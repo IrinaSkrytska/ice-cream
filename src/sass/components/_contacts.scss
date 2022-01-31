@@ -26,6 +26,8 @@
       $background-color__ivory 25%,
       $background-color__ivory 100%
     );
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -43,7 +45,7 @@
     background-image: url('../images/contacts-images/sectionbg.png');
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: 50%;
+    background-position: left 0 top 50%;
   }
 }
 
