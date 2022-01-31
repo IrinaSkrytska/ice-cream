@@ -59,9 +59,6 @@
       border-radius: 22px;
       z-index: 2;
 
-      // &::after {
-      // }
-
       &:hover,
       &:focus {
         background-color: $secondary-button-hover;
@@ -73,6 +70,20 @@
       margin-left: 70px;
       margin-right: 69px;
     }
+  }
+
+  &__button-text {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  &__button-text::after {
+    content: '>';
+    position: absolute;
+    height: 90%;
+    right: 0;
+    margin-left: 12px;
   }
 
   &__menu-button {
