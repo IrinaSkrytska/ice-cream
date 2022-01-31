@@ -1,0 +1,53 @@
+details {
+  position: relative;
+  border: 1px solid red;
+}
+
+details > summary {
+  list-style: none;
+}
+
+summary {
+  margin: 0;
+  padding: 0;
+}
+
+summary::marker {
+  display: none;
+}
+
+summary::after {
+  content: '';
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  bottom: 6px;
+  left: 0;
+  border-radius: 50%;
+  background-image: url(../images/header/arrow.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  @media screen and (min-device-pxel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../images/header/arrow2x.png);
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 26px;
+    height: 26px;
+    background-image: url(../images/header/arrowd.png);
+
+    @media screen and (min-device-pxel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/header/arrowd2x.png);
+    }
+  }
+}
+
+details[open] summary:after {
+  content: '';
+  background-image: none;
+}

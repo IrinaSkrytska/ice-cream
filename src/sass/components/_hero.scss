@@ -240,49 +240,11 @@
     color: $main-color__white;
     font-size: 8px;
     line-height: 1.5;
-    margin-bottom: 7px;
 
     @media screen and (min-width: $desktop) {
       font-size: 14px;
       line-height: 1.4;
-      margin-bottom: 20px;
     }
-  }
-
-  &__arrow-link {
-    display: block;
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    background-image: url(../images/header/arrow.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-
-    transition: transform 250ms ease-in-out;
-
-    @media screen and (min-device-pxel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      background-image: url(../images/header/arrow2x.png);
-    }
-
-    @media screen and (min-width: $desktop) {
-      width: 26px;
-      height: 26px;
-      background-image: url(../images/header/arrowd.png);
-
-      @media screen and (min-device-pxel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-        background-image: url(../images/header/arrowd2x.png);
-      }
-    }
-  }
-
-  &__arrow-link:hover,
-  &__arrow-link:focus {
-    transform: rotate(90deg);
-    box-shadow: $button-shadow;
   }
 
   &__ice-content-wrap {
