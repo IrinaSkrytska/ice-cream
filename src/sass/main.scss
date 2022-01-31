@@ -1,3 +1,8 @@
+
+@import './base/common';
+@import './utils/variables';
+@import './base/reset';
+
 @import "./base/common";
 @import "./utils/variables";
 @import "./mixins/custom-text";
@@ -16,4 +21,5 @@
 @import './components/gallery';
 @import './components/about';
 @import './components/advantages';
+@import './components/contacts';
 @import './components/footer';
