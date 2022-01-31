@@ -412,7 +412,7 @@
     // left: 125px;
 
     margin-left: 8px;
-    @media screen and (min-width: 768px) and (max-width: 1200px) {
+    @media screen and (min-width: 480px) and (max-width: 1200px) {
       bottom: -1px;
     }
     // background-image: url(/src/images/contacts/button-after.svg);
@@ -470,7 +470,7 @@
     height: 90%;
     bottom: 0px;
     margin-left: 8px;
-    @media screen and (min-width: 768px) and (max-width: 1200px) {
+    @media screen and (min-width: 480px) and (max-width: 1200px) {
       bottom: -1px;
     }
   }
