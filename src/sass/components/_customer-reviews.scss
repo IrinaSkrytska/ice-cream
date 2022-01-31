@@ -1,6 +1,15 @@
 .customers-reviews-section{
-    padding-top: 123px;
-    padding-bottom: 132px;
+    @media screen and (max-width:767px) {
+        padding-top: 80px;
+    }
+
+    @media screen and (min-width:768px) {
+        padding-top: 119px;
+    }
+
+    @media screen and (min-width:1200px) {
+        padding-top: 123px;
+    }
 }
 
 .slick-slide{
