@@ -1,61 +1,48 @@
 // Hero section
 .hero {
-  position: relative;
   width: 100%;
-  height: 502px;
-  padding-top: 6px;
-  background-color: $background-color__pink;
-
-  @media screen and (max-width: $tablet - 1px) {
-    background-image: url(../images/header/circle346.png);
-    background-position: right 0 bottom 75px;
-    background-repeat: no-repeat;
-  }
 
   @media screen and (min-width: $tablet) {
-    height: 399px;
-    padding-top: 37px;
-  }
-
-  @media screen and (min-width: $desktop) {
-    height: 665px;
+    background-color: $background-color__pink;
   }
 
   & .container {
-    // position: relative;
-    // height: 100%;
+    height: 502px;
     background-repeat: no-repeat;
+    background-color: $background-color__pink;
 
     @media screen and (max-width: $tablet - 1px) {
       max-width: $mobile;
-      // height: 502px;
       padding: 0 20px;
     }
 
     @media screen and (min-width: $tablet) {
       width: $tablet;
-      // height: 399px;
+      height: 399px;
       padding: 0 34px;
+      background-color: transparent;
     }
 
     @media screen and (min-width: $desktop) {
       width: $desktop;
-      // height: 665px;
       padding: 0 46px;
+      height: 665px;
+      padding-left: 69px;
     }
   }
 
   &__wrapper {
     position: relative;
+    height: calc(100% - 56px);
     padding-top: 137px;
 
     @media screen and (min-width: $tablet) {
+      height: calc(100% - 87px);
       padding-top: 15px;
     }
 
     @media screen and (min-width: $desktop) {
       padding-top: 84px;
-      padding-left: 69px;
     }
   }
 
@@ -65,13 +52,13 @@
     @media screen and (min-width: $tablet) {
       display: inline-block;
       position: absolute;
-      right: 8px;
-      top: 14px;
+      right: 10px;
+      top: 9px;
     }
 
     @media screen and (min-width: $desktop) {
       right: 69px;
-      top: 74px;
+      top: 73px;
     }
   }
 
@@ -130,6 +117,11 @@
     }
   }
 
+  &__title-wrap {
+    position: relative;
+    z-index: 2;
+  }
+
   &__title {
     font-family: 'Titan One', 'Arial', sans-serif;
     font-size: 26px;
@@ -142,7 +134,7 @@
 
     @media screen and (min-width: $tablet) {
       font-size: 22px;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
     }
 
     @media screen and (min-width: $desktop) {
@@ -234,6 +226,7 @@
   &__milk-content {
     max-width: 114px;
     padding-top: 47px;
+    z-index: 2;
 
     @media screen and (min-width: $desktop) {
       max-width: 200px;
@@ -262,33 +255,20 @@
     }
   }
 
-  &__ice-wrap {
-    @media screen and (max-width: $tablet - 1px) {
-      position: absolute;
-      width: 171px;
-      right: 32px;
-      bottom: 0;
-    }
-
-    @media screen and (min-width: $tablet) {
-      display: none;
-    }
-  }
-
   &__ice-content-wrap {
-    display: none;
+    position: absolute;
+    width: 92px;
+    right: 74px;
+    bottom: 0px;
 
     @media screen and (min-width: $tablet) {
-      display: block;
-      position: absolute;
-      bottom: 0px;
       width: 143px;
-      right: 33%;
+      right: 213px;
     }
 
     @media screen and (min-width: $desktop) {
       width: 236px;
-      right: 450px;
+      right: 404px;
     }
   }
 
@@ -298,15 +278,22 @@
   }
 
   &__ice-content-wrap::before {
+    content: '';
+    position: absolute;
+    width: 284px;
+    height: 344px;
+    right: -94px;
+    top: -9px;
+    background-image: url(../images/header/circle346.png);
+    background-repeat: no-repeat;
+
     @media screen and (min-width: $tablet) {
-      content: '';
-      position: absolute;
-      background-color: $main-color__pale-pink;
-      border-radius: 50%;
       width: 324px;
       height: 322px;
       right: -110px;
       top: -32px;
+      background-color: $main-color__pale-pink;
+      border-radius: 50%;
     }
 
     @media screen and (min-width: $desktop) {
@@ -321,13 +308,13 @@
     @media screen and (min-width: $tablet) {
       position: absolute;
       width: 168px;
-      right: 6%;
+      right: 0;
       bottom: 0;
     }
 
     @media screen and (min-width: $desktop) {
       width: 293px;
-      right: 109px;
+      right: 63px;
     }
   }
 
