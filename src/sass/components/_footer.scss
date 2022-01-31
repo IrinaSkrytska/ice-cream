@@ -20,7 +20,9 @@
   line-height: 1.17;
   text-transform: uppercase;
   color: $main-color__pale-pink;
+  transition-property: transform;
 }
+
 
 .footer_title-two {
   display: inline-block;
@@ -31,7 +33,18 @@
   text-transform: uppercase;
 
   color: $main-color__bright-pink;
+
+  transition: all 1s;
+
+  &:hover {
+    transform: scale(1.2);
+
+  }
 }
+
+
+
+
 
 .footer-icons__block {
   display: flex;
@@ -47,10 +60,26 @@
 .footer-icons {
   fill: $icons-color__pink;
 
+  @keyframes rotateY {
+    0% {
+      transform: perspective(400px) rotateY(0deg);
+    }
+
+    100% {
+      transform: perspective(400px) rotateY(360deg);
+    }
+  }
+
   &:focus,
   &:hover {
     fill: #D41443;
+    animation: rotateY 1500ms infinite alternate ease-in-out 1000ms;
+    animation-delay: 50ms;
+    animation-iteration-count: 1;
   }
+
+
+
 }
 
 .footer__contact {
