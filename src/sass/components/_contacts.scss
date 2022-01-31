@@ -361,23 +361,16 @@
   margin-right: auto;
 
   padding-top: 54px;
-  padding-bottom: 113px;
 
   @media screen and (min-width: 768px) and (max-width: 1200px) {
     padding-top: 81px;
-    padding-bottom: 165px;
+
     display: flex;
     justify-content: center;
     margin: 0;
-    // align-items: center;
   }
   @media screen and (min-width: 1201px) {
     padding-top: 86px;
-    padding-bottom: 165px;
-
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
   }
 }
 
@@ -387,10 +380,7 @@
   margin-left: auto;
   margin-right: auto;
   height: 50px;
-  //   min-width: 161px;
 
-  //   width: 162px;
-  //   height: 44px;
   padding: 15px 54px 15px 17px;
 
   box-sizing: border-box;
@@ -401,7 +391,6 @@
   text-align: center;
   letter-spacing: 0.06em;
 
-  margin-bottom: 10px;
   @media screen and (min-width: 768px) and (max-width: 1200px) {
     display: inline-block;
     margin-left: auto;
