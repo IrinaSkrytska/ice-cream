@@ -3,7 +3,7 @@
   position: relative;
   width: 100%;
   height: 502px;
-  margin: 0 auto;
+  padding-top: 6px;
   background-color: $background-color__pink;
 
   @media screen and (max-width: $tablet - 1px) {
@@ -14,6 +14,7 @@
 
   @media screen and (min-width: $tablet) {
     height: 399px;
+    padding-top: 37px;
   }
 
   @media screen and (min-width: $desktop) {
@@ -21,24 +22,25 @@
   }
 
   & .container {
-    position: relative;
+    // position: relative;
+    // height: 100%;
     background-repeat: no-repeat;
 
     @media screen and (max-width: $tablet - 1px) {
       max-width: $mobile;
-      height: 502px;
+      // height: 502px;
       padding: 0 20px;
     }
 
     @media screen and (min-width: $tablet) {
       width: $tablet;
-      height: 399px;
+      // height: 399px;
       padding: 0 34px;
     }
 
     @media screen and (min-width: $desktop) {
       width: $desktop;
-      height: 665px;
+      // height: 665px;
       padding: 0 46px;
     }
   }
@@ -76,6 +78,7 @@
   &__states-item {
     position: relative;
     text-align: right;
+    z-index: 2;
   }
 
   &__states-item::before {
@@ -280,7 +283,7 @@
       position: absolute;
       bottom: 0px;
       width: 143px;
-      right: 247px;
+      right: 33%;
     }
 
     @media screen and (min-width: $desktop) {
@@ -318,7 +321,7 @@
     @media screen and (min-width: $tablet) {
       position: absolute;
       width: 168px;
-      right: 34px;
+      right: 6%;
       bottom: 0;
     }
 
