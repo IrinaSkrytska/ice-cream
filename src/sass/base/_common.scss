@@ -1,7 +1,13 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'DM Sans', sans-serif;
   font-style: normal;
   font-size: 16px;
+  cursor: url('../images/ice-cream.png'),
+    auto;
 }
 
 .container {
