@@ -252,9 +252,12 @@
     display: block;
     width: 18px;
     height: 18px;
+    border-radius: 50%;
     background-image: url(../images/header/arrow.png);
     background-size: contain;
     background-repeat: no-repeat;
+
+    transition: transform 250ms ease-in-out;
 
     @media screen and (min-device-pxel-ratio: 2),
       screen and (min-resolution: 192dpi),
@@ -273,6 +276,12 @@
         background-image: url(../images/header/arrowd2x.png);
       }
     }
+  }
+
+  &__arrow-link:hover,
+  &__arrow-link:focus {
+    transform: rotate(90deg);
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   }
 
   &__ice-content-wrap {
