@@ -245,6 +245,14 @@
       font-size: 14px;
       line-height: 1.4;
     }
+
+    details[open] & {
+      line-height: 1.5;
+
+      @media screen and (min-width: $desktop) {
+        line-height: 1.4;
+      }
+    }
   }
 
   &__ice-content-wrap {
