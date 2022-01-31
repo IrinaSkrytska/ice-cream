@@ -19,6 +19,10 @@
     }
   }
 
+  &__menu-item {
+    z-index: 2;
+  }
+
   &__menu-item:not(:last-child) {
     margin-right: 35px;
   }
@@ -56,6 +60,7 @@
       color: $main-color__bright-pink;
       background-color: $main-color__white;
       border-radius: 22px;
+      z-index: 2;
 
       // &::after {
       // }
@@ -97,8 +102,10 @@
   }
 
   &__menu-button.is-open {
+    position: absolute;
+    top: 23px;
+    right: 28px;
     @media screen and (min-width: $tablet) {
-      position: absolute;
       top: 23px;
       right: 34px;
     }
