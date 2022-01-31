@@ -1,0 +1,19 @@
+// Header section
+.header {
+  margin: 0 auto;
+
+  @media screen and (max-width: $tablet - 1px) {
+    max-width: $mobile;
+    padding: 0 20px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+    padding: 0 34px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+    padding: 0 46px;
+  }
+}
