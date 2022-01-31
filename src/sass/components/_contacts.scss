@@ -55,34 +55,21 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  //   justify-content: space-between;
   justify-content: center;
   list-style: none;
 
   padding-left: 0;
-  padding-top: 86px;
   margin-bottom: -10px;
   margin-top: -10px;
 
-  //   margin-left: 35px;
-  //   margin-right: 35px;
-
-  //   margin-left: auto;
-  //   margin-right: auto;
   @media screen and (min-width: 768px) and (max-width: 1200px) {
     flex-direction: row;
-    padding-top: 119px;
-    flex-wrap: nowrap;
 
-    // margin-left: 0px;
-    // margin-right: 0px;
+    flex-wrap: nowrap;
   }
   @media screen and (min-width: 1201px) {
     flex-direction: row;
     flex-wrap: nowrap;
-    padding-top: 132px;
-    // margin-left: 105px;
-    // margin-right: 105px;
   }
 }
 
@@ -179,7 +166,7 @@
   letter-spacing: 0.04em;
   border-radius: 4px;
 
-  margin-right: 70px;
+  margin-right: 65px;
   margin-bottom: 25px;
   @media screen and (min-width: 768px) and (max-width: 1200px) {
     font-size: 16px;
