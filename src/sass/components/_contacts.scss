@@ -8,6 +8,16 @@
     $background-color__ivory 11%,
     $background-color__ivory 100%
   );
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    // width: 772px;
+    background-image: linear-gradient(
+      to bottom,
+      $main-color__white 0%,
+      $main-color__white 22%,
+      $background-color__ivory 22%,
+      $background-color__ivory 100%
+    );
+  }
   @media screen and (min-width: 1201px) {
     background-image: linear-gradient(
       to bottom,
@@ -27,22 +37,13 @@
   width: 100%;
   padding-bottom: -10px;
 
-  @media screen and (min-width: 768px) and (max-width: 1200px) {
-    // width: 772px;
-    background-image: linear-gradient(
-      to bottom,
-      $main-color__white 0%,
-      $main-color__white 22%,
-      $background-color__ivory 22%,
-      $background-color__ivory 100%
-    );
-  }
   @media screen and (min-width: 1201px) {
+    // position: absolute;
     padding-bottom: -15px;
     background-image: url('../images/contacts-images/sectionbg.png');
     background-repeat: no-repeat;
     background-size: contain;
-    left: 0;
+    background-position: 0;
   }
 }
 
