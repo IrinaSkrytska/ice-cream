@@ -1,8 +1,17 @@
 @import './base/common';
 @import './utils/variables';
+@import './mixins/custom-text';
 @import './base/reset';
+@import './components/customer-reviews';
+@import './base/common';
+@import './utils/variables';
+@import './components/hero';
+@import './components/header';
+@import './components/nav';
+@import './components/mobile-menu';
 @import './components/products';
 @import './components/gallery';
 @import './components/about';
 @import './components/advantages';
+@import './components/contacts';
 @import './components/footer';

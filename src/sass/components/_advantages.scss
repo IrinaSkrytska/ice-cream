@@ -1,11 +1,10 @@
 .advantages {
   background-color: $background-color__ivory;
-
+  width: 100%;
   padding: 39px 70px 97px 20px;
 }
 
 .advantages__content {
-
   list-style: none;
   padding: 0;
   margin: 0;
@@ -24,7 +23,6 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
-
   color: $main-color__bright-pink;
   margin: 0;
   margin-bottom: 20px;
@@ -42,22 +40,20 @@
 
 .advantages__milk {
   position: relative;
-
 }
 
 .advantages__milk::before {
   position: absolute;
-  content: "";
+  content: '';
   width: 33px;
   height: 50px;
   left: 0;
   top: 0;
   background-image: url(../images/advantages/adv1_1x.png);
 
-
   @media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
     object-fit: contain;
     background-image: url(../images/advantages/adv1_2x.png);
     background-size: contain;
@@ -71,7 +67,7 @@
 
 .advantages__fruits::before {
   position: absolute;
-  content: "";
+  content: '';
   width: 50px;
   height: 50px;
   left: 0;
@@ -79,8 +75,8 @@
   background-image: url(../images/advantages/adv2_1x.png);
 
   @media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
     background-image: url(../images/advantages/adv2_2x.png);
     background-size: contain;
   }
@@ -93,7 +89,7 @@
 
 .advantages__candy::before {
   position: absolute;
-  content: "";
+  content: '';
   width: 44px;
   height: 50px;
   left: 0;
@@ -101,8 +97,8 @@
   background-image: url(../images/advantages/adv3_1x.png);
 
   @media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
     background-image: url(../images/advantages/adv3_2x.png);
     background-size: contain;
   }
