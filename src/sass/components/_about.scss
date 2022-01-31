@@ -29,13 +29,13 @@
 
   @media screen and (min-width: 320px) and (max-width: 767px) {
     background-size: contain;
-    background-image: url(../images/about/about-bg-milk-2x.png);
+    background-image: url(../images/about/about-bg-milk-mob.png);
     background-position: bottom 10% right 25%;
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-image: url(../images/about/about-bg-milk-2x.png);
+      background-image: url(../images/about/about-bg-milk-mob-2x.png);
       background-position: bottom 10% right 25%;
     }
   }
@@ -49,7 +49,7 @@
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-image: url(../images/about/about-bg-milk-pc.png);
+      background-image: url(../images/about/about-bg-milk-pc-2x.png);
     }
   }
 }
