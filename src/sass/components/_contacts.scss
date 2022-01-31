@@ -18,7 +18,7 @@
       $background-color__ivory 100%
     );
   }
-  @media screen and (min-width: 1201px) {
+  @media screen and (min-width: 1200px) {
     background-image: linear-gradient(
       to bottom,
       $main-color__white 0%,
@@ -28,6 +28,7 @@
     );
     padding-left: 0;
     padding-right: 0;
+    width: 100%;
   }
 }
 
