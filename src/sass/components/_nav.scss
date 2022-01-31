@@ -68,6 +68,7 @@
       &:hover,
       &:focus {
         background-color: $secondary-button-hover;
+        box-shadow: $button-shadow;
       }
     }
 

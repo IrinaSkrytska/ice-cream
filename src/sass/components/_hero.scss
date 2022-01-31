@@ -11,7 +11,7 @@
     background-repeat: no-repeat;
     background-color: $background-color__pink;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $tablet - 1px) {
       max-width: $mobile;
       padding: 0 20px;
     }
@@ -179,6 +179,7 @@
     &.btn:hover,
     &.btn:focus {
       background-color: $primary-button-hover;
+      box-shadow: $button-shadow;
     }
 
     &.btn-revers {
@@ -189,6 +190,7 @@
     &.btn-revers:hover,
     &.btn-revers:focus {
       background-color: $secondary-button-hover;
+      box-shadow: $button-shadow;
     }
   }
 
@@ -281,7 +283,7 @@
   &__arrow-link:hover,
   &__arrow-link:focus {
     transform: rotate(90deg);
-    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    box-shadow: $button-shadow;
   }
 
   &__ice-content-wrap {
@@ -314,7 +316,7 @@
     right: -94px;
     top: -9px;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $tablet - 1px) {
       background-image: url(../images/header/circle346.png);
       background-size: contain;
       background-repeat: no-repeat;
