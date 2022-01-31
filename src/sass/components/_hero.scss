@@ -284,8 +284,18 @@
     height: 344px;
     right: -94px;
     top: -9px;
-    background-image: url(../images/header/circle346.png);
-    background-repeat: no-repeat;
+
+    @media screen and (max-width: $tablet - 1px) {
+      background-image: url(../images/header/circle346.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+
+      @media screen and (min-device-pxel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url(../images/header/circle346@2x.png);
+      }
+    }
 
     @media screen and (min-width: $tablet) {
       width: 324px;
