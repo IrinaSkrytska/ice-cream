@@ -1,6 +1,6 @@
 <section id="about" class="about-section">
 
-    <div class="about-container ">
+    <div class="about-container">
         <h2 class="about-section__label">tradition and love</h2>
         <h1 class="about-section__title">how it’s made?</h1>
 
@@ -33,16 +33,16 @@
                
 
 
-                <button type="button" class="about__button" data-modal-open>Read more ></button>
+                <button type="button" class="about__button" about-data-modal-open>Read more ></button>
             </div>
         </div>
 
     </div>
 
-    <div class="about-backdrop is-hidden" data-modal>
+    <div class="about-backdrop about-is-hidden" about-data-modal>
     
         <div class="about-modal">
-            <button data-modal-close class="about-modal__close-button">
+            <button about-data-modal-close class="about-modal__close-button">
                 <svg class="modal__close-icon">
                     <use href="./images/about/form-sprite.svg#icon-close-button"></use>
                 </svg>
@@ -65,16 +65,17 @@
     <script>
         (() => {
                 const refs = {
-                    openModalBtn: document.querySelector('[data-modal-open]'),
-                    closeModalBtn: document.querySelector('[data-modal-close]'),
-                    modal: document.querySelector('[data-modal]'),
+                    openModalBtn: document.querySelector('[about-data-modal-open]'),
+                    closeModalBtn: document.querySelector('[about-data-modal-close]'),
+                    modal: document.querySelector('[about-data-modal]'),
                 };
 
                 refs.openModalBtn.addEventListener('click', toggleModal);
                 refs.closeModalBtn.addEventListener('click', toggleModal);
 
                 function toggleModal() {
-                    refs.modal.classList.toggle('is-hidden');
+                  // document.body.classList.toggle('modal-open');
+                    refs.modal.classList.toggle('about-is-hidden');
                 }
             })();
     </script>
