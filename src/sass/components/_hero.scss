@@ -247,11 +247,31 @@
     }
   }
 
-  &__arrow-img {
+  &__arrow-link {
+    @extend %link;
+    display: block;
     width: 18px;
+    height: 18px;
+    background-image: url(../images/header/arrow.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    @media screen and (min-device-pxel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/header/arrow2x.png);
+    }
 
     @media screen and (min-width: $desktop) {
       width: 26px;
+      height: 26px;
+      background-image: url(../images/header/arrowd.png);
+
+      @media screen and (min-device-pxel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url(../images/header/arrowd2x.png);
+      }
     }
   }
 
