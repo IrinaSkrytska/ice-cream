@@ -179,6 +179,7 @@
     &.btn:hover,
     &.btn:focus {
       background-color: $primary-button-hover;
+      box-shadow: $button-shadow;
     }
 
     &.btn-revers {
@@ -189,6 +190,7 @@
     &.btn-revers:hover,
     &.btn-revers:focus {
       background-color: $secondary-button-hover;
+      box-shadow: $button-shadow;
     }
   }
 
@@ -238,50 +240,19 @@
     color: $main-color__white;
     font-size: 8px;
     line-height: 1.5;
-    margin-bottom: 7px;
 
     @media screen and (min-width: $desktop) {
       font-size: 14px;
       line-height: 1.4;
-      margin-bottom: 20px;
-    }
-  }
-
-  &__arrow-link {
-    @extend %link;
-    display: block;
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    background-image: url(../images/header/arrow.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-
-    transition: transform 250ms ease-in-out;
-
-    @media screen and (min-device-pxel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      background-image: url(../images/header/arrow2x.png);
     }
 
-    @media screen and (min-width: $desktop) {
-      width: 26px;
-      height: 26px;
-      background-image: url(../images/header/arrowd.png);
+    details[open] & {
+      line-height: 1.5;
 
-      @media screen and (min-device-pxel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-        background-image: url(../images/header/arrowd2x.png);
+      @media screen and (min-width: $desktop) {
+        line-height: 1.4;
       }
     }
-  }
-
-  &__arrow-link:hover,
-  &__arrow-link:focus {
-    transform: rotate(90deg);
-    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   }
 
   &__ice-content-wrap {

@@ -1,5 +1,5 @@
 .mobile-menu {
-  @media screen and (max-width: $desktop - 1px) {
+  @media screen and (max-width: 1199px) {
     position: absolute;
     overflow: hidden;
     top: 0;
@@ -77,11 +77,26 @@
     &:hover,
     &:focus {
       background-color: $secondary-button-hover;
+      box-shadow: $button-shadow;
     }
 
     @media screen and (min-width: $tablet) {
       width: 186px;
     }
+  }
+
+  &__button-text {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  &__button-text::after {
+    content: '>';
+    position: absolute;
+    height: 90%;
+    right: 0;
+    margin-left: 14px;
   }
 
   &__list {

@@ -138,13 +138,13 @@
 
 @media screen and (min-width: 1200px) {
   .advantages {
-    width: auto;
     padding: 39px 115px 139px 115px;
   }
 
   .advantages__content {
     display: flex;
     align-items: flex-end;
+    justify-content: space-around;
     flex-grow: 1;
   }
 
