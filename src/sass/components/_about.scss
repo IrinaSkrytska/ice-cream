@@ -1,0 +1,392 @@
+// $main-color__bright-pink: #d41443;
+// $main-color__pale-pink: #ffa5ba;
+// $main-color__white: #fff;
+// $main-color__grey: #907e82;
+// $main-color__black: #000;
+// $main-color__peach: #ffb8ca;
+// $main-color__green: #c2e297;
+// $background-color__pink: #ffb8ca;
+// $background-color__white: #e5e5e5;
+// $background-color__ivory: #fff5f6;
+
+.about-section {
+  background-color: $background-color__ivory;
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    padding-top: 125px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    padding-top: 130px;
+  }
+  @media screen and (min-width: 1201px) {
+    padding-top: 125px;
+  }
+}
+
+.about-container {
+  padding: 0 15px;
+  margin: 0 auto;
+  width: 100%;
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+
+.about-overlay {
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    background-size: contain;
+    background-image: url(../images/about/about-bg-milk-mob.png);
+    background-position: bottom 10% right 25%;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/about/about-bg-milk-mob-2x.png);
+      background-position: bottom 10% right 25%;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    //display: none;
+  }
+  @media screen and (min-width: 1201px) {
+    background-size: contain;
+    background-position: bottom -50% right 25%;
+
+    background-image: url(../images/about/about-bg-milk-pc.png);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-position: bottom -50% right 25%;
+      background-image: url(../images/about/about-bg-milk-pc-2x.png);
+    }
+  }
+}
+
+.about-section__label {
+  font-family: Titan One;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 1.13;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: $main-color__pale-pink;
+
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.about-section__title {
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 58px;
+  line-height: 66px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: $main-color__bright-pink;
+
+  padding-bottom: 102px;
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    padding-top: 26px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    padding-top: 50px;
+  }
+  @media screen and (min-width: 1201px) {
+    padding-bottom: 55px;
+  }
+}
+
+.about-section__main-info {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 1201px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.about-section__img {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    padding-bottom: 46px;
+  }
+}
+
+.about-section__descriptions {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    padding-left: 17px;
+    padding-right: 21px;
+  }
+  @media screen and (min-width: 1201px) {
+    padding-left: 74px;
+    padding-right: 102px;
+  }
+}
+.about-section__first-description {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+
+  letter-spacing: 0.04em;
+
+  color: $main-color__black;
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    font-size: 12px;
+    line-height: 162%;
+    margin-bottom: 47px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    font-size: 14px;
+    line-height: 176%;
+
+    margin-bottom: 49px;
+  }
+  @media screen and (min-width: 1201px) {
+    font-size: 16px;
+    line-height: 176%;
+
+    margin-bottom: 35px;
+  }
+}
+
+.about-section__second-description {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+
+  letter-spacing: 0.04em;
+
+  color: $main-color__grey;
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    font-size: 12px;
+    line-height: 162%;
+
+    margin-bottom: 47px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    ont-size: 14px;
+    line-height: 176%;
+
+    margin-bottom: 62px;
+  }
+  @media screen and (min-width: 1201px) {
+    font-size: 14px;
+    line-height: 194%;
+
+    margin-bottom: 45px;
+  }
+}
+
+.about__button {
+  border: transparent;
+  font-family: inherit;
+
+  padding: 10px 32px;
+
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 176px;
+  justify-content: center;
+
+  color: $main-color__bright-pink;
+  background-color: $main-color__white;
+
+  border-radius: 22px;
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  @media screen and (min-width: 1201px) {
+    font-size: 16px;
+    line-height: 21px;
+  }
+}
+
+/* Modal*/
+.about-backdrop {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  z-index: 9;
+
+  background: rgba(0, 0, 0, 0.2);
+
+  opacity: 1;
+  //   transition: opacity $time-transition $cubic;
+}
+.about-backdrop.about-is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.about-backdrop.about-is-hidden .modal {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.about-modal {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+
+  background-color: $main-color__white;
+  border-radius: 4px;
+
+  padding: 40px;
+
+  z-index: 200;
+
+  width: 300px;
+
+  //   transition: transform $time-transition $cubic;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  @media screen and (max-width: 767px) {
+    max-width: 300px;
+    //height: 609px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
+    //height: 609px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 600px;
+    //height: 100px;
+  }
+}
+
+.about-modal__close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 20px;
+  height: 20px;
+
+  padding: 5px;
+
+  border-radius: 50%;
+  border: 1px solid;
+  border-color: rgba(0, 0, 0, 0.1);
+  background-color: $main-color__white;
+
+  //   transition: fill $time-transition $cubic;
+
+  &:hover .modal__close-icon {
+    fill: $main-color__bright-pink;
+  }
+}
+.about-modal__close-icon {
+  width: 10px;
+  height: 10px;
+  fill: $main-color__black;
+}
+
+.about-main-form {
+  //position: absolute;
+  top: 40px;
+  display: flex;
+  // align-items: center;
+  flex-direction: column;
+}
+
+.about-modal__title {
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+
+  color: $main-color__bright-pink;
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    font-size: 16px;
+    line-height: 21px;
+    margin-bottom: 13px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    font-size: 48px;
+    line-height: 55px;
+    margin-bottom: 13px;
+  }
+  @media screen and (min-width: 1201px) {
+    font-size: 58px;
+    line-height: 66px;
+    margin-bottom: 15px;
+  }
+}
+
+.about-modal__text {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+
+  color: $main-color__black;
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    font-size: 12px;
+    line-height: 170%;
+    margin-bottom: 38px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    font-size: 14px;
+    line-height: 174%;
+  }
+  @media screen and (min-width: 1201px) {
+    font-size: 16px;
+    line-height: 176%;
+
+    letter-spacing: 0.02em;
+  }
+}

@@ -1,6 +1,7 @@
 .footer {
   background-color: $background-color__ivory;
   padding-top: 113px;
+  width: 100%;
 }
 
 .footer__title {
@@ -8,7 +9,7 @@
   padding-right: 51px;
   margin-left: 5px;
   display: flex;
-  flex-direction: column
+  flex-direction: column;
 }
 
 .footer__title-one {
@@ -20,7 +21,9 @@
   line-height: 1.17;
   text-transform: uppercase;
   color: $main-color__pale-pink;
+  transition-property: transform;
 }
+
 
 .footer_title-two {
   display: inline-block;
@@ -31,7 +34,18 @@
   text-transform: uppercase;
 
   color: $main-color__bright-pink;
+
+  transition: all 1s;
+
+  &:hover {
+    transform: scale(1.2);
+
+  }
 }
+
+
+
+
 
 .footer-icons__block {
   display: flex;
@@ -47,10 +61,26 @@
 .footer-icons {
   fill: $icons-color__pink;
 
+  @keyframes rotateY {
+    0% {
+      transform: perspective(400px) rotateY(0deg);
+    }
+
+    100% {
+      transform: perspective(400px) rotateY(360deg);
+    }
+  }
+
   &:focus,
   &:hover {
     fill: #D41443;
+    animation: rotateY 1500ms infinite alternate ease-in-out 1000ms;
+    animation-delay: 50ms;
+    animation-iteration-count: 1;
   }
+
+
+
 }
 
 .footer__contact {
@@ -64,7 +94,6 @@
   color: $main-color__black;
 
   margin-bottom: 43px;
-
 }
 
 .footer__phone {
@@ -82,13 +111,12 @@
   font-size: 14px;
   line-height: 1.52;
   color: $main-color__grey;
-  border-top: 1px solid #E1E1E1;
+  border-top: 1px solid #e1e1e1;
 }
 
 @media screen and (min-width: 768px) {
   .footer {
     padding-top: 158px;
-
   }
 
   .footer__contacts {
@@ -117,7 +145,6 @@
     font-size: 48px;
     line-height: 1.14;
     letter-spacing: 0.06em;
-
   }
 
   .footer-icons {
@@ -140,12 +167,12 @@
 @media screen and (min-width: 1200px) {
   .footer {
     padding-top: 165px;
-    width: 100%;
+    /* width: 100%; */
   }
 
   .footer__contacts {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: baseline;
     padding-left: 114px;
     padding-right: 116px;
@@ -161,7 +188,6 @@
   .footer_title-two {
     font-size: 58px;
     line-height: 1.14;
-
   }
 
   .footer-icons__block {
@@ -175,6 +201,5 @@
   .footer__rights {
     padding-top: 9px;
     padding-bottom: 10px;
-
   }
 }

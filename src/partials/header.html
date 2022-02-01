@@ -1,0 +1,212 @@
+<section class="hero" id="home">
+
+  <div class="container">
+
+    <!-- header -->
+    <div class="header">
+
+      <!-- Navigation -->
+      <nav class="nav">
+
+        <!-- Logo -->
+        <a href="./index.html" class="nav__logo-link">
+          <picture>
+            <source srcset="./images/header/logo.png 1x, ./images/header/logo@2x.png 2x">
+            <img class="nav__logo" src="./images/header/logo.png" width="199" alt="логотип">
+          </picture>
+        </a>
+
+        <div class="nav__menu-wrap">
+
+          <!-- Menu block -->
+          <ul class="nav__desktop-menu">
+            <li class="nav__menu-item"><a href="#home" class="nav__link">Home</a></li>
+            <li class="nav__menu-item"><a href="#advantages" class="nav__link">About us</a></li>
+            <li class="nav__menu-item"><a href="#about" class="nav__link">How it’s made?</a></li>
+            <li class="nav__menu-item"><a href="#products" class="nav__link">Our products</a></li>
+            <li class="nav__menu-item"><a href="#contacts" class="nav__link">Contact</a></li>
+          </ul>
+
+          <!-- Mobile menu button open/close -->
+          <button class="nav__menu-button" type="button" aria-expanded="false" aria-controls="nav__mobile-menu"
+            data-menu-button>
+            <svg class="nav__menu-icon" width="20" height="12" aria-label="Переключатель моильного меню">
+              <use class="nav__icon-menu" href="./images/header/symbol-defs.svg#burger"></use>
+              <use class="nav__icon-cross" href="./images/header/symbol-defs.svg#close"></use>
+            </svg>
+          </button>
+
+          <!-- Tablet/Desktop menu button -->
+          <button 
+          class="nav__button" 
+          type="button"
+          data-modal-form-open
+          >
+            <span class="nav__button-text">Buy now</span>
+          </button>
+
+          <!-- Mobile menu -->
+          <div class="mobile-menu" id="nav__mobile-menu" data-menu>
+
+            <div class="mobile-menu__content">
+
+              <!-- mobile menu content -->
+              <button 
+              class="mobile-menu__button" 
+              type="button"
+              data-modal-form-open
+              >
+              <span class="mobile-menu__button-text">Buy now</span></button>
+              <ul class="mobile-menu__list">
+                <li class="mobile-menu__item"><a href="#home" class="mobile-menu__link">Home</a></li>
+                <li class="mobile-menu__item"><a href="#advantages" class="mobile-menu__link">About us</a></li>
+                <li class="mobile-menu__item"><a href="#about" class="mobile-menu__link">How it’s made?</a></li>
+                <li class="mobile-menu__item"><a href="#products" class="mobile-menu__link">Our products</a>
+                </li>
+                <li class="mobile-menu__item"><a href="#contacts" class="mobile-menu__link">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+
+
+        </div>
+
+      </nav>
+
+    </div>
+
+    <!-- Hero content -->
+    <div class="hero__wrapper">
+
+      <div class="hero__title-wrap">
+        <!-- Heto tittle -->
+        <h1 class="hero__title">
+          ice cream <br>
+          made with <br>
+          <span class="hero__title-decoration">passion</span>
+        </h1>
+
+        <!-- Hero buttons -->
+        <a class="hero__button btn" href="#products">Products</a>
+        <a class="hero__button btn-revers" href="#about">How it’s made?</a>
+      </div>
+
+
+      <!-- States right numbers -->
+      <ul class="hero__states-list">
+        <li class="hero__states-item">
+          <p class="hero__states-number">16</p>
+          <p class="hero__states-name">cafes</p>
+        </li>
+        <li class="hero__states-item">
+          <p class="hero__states-number">23</p>
+          <p class="hero__states-name">food trucks</p>
+        </li>
+      </ul>
+
+      <!-- Milk block -->
+      <div class="hero__milk-block">
+
+        <div class="hero__milk-wrap">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="./images/header/milkd.png 1x, ./images/header/milkd@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="./images/header/milkt.png 1x, ./images/header/milkt@2x.png 2x">
+            <img class="hero__milk-img" src="./images/header/milkt.png" alt="Кувшин с молоком">
+          </picture>
+        </div>
+
+
+        <!-- Details milk content -->
+        <details class="hero__milk-content">
+          <summary class="hero__milk-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et set.</summary>
+          <span class="hero__milk-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+        </details>
+
+
+       
+      </div>
+
+      <!-- Ice img -->
+      <div class="hero__ice-content-wrap">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="./images/header/ice236.png 1x, ./images/header/ice236@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="./images/header/ice143.png 1x, ./images/header/ice143@2x.png 2x">
+          <source media="(max-width: 767px)" srcset="./images/header/ice171.png 1x, ./images/header/ice171@2x.png 2x">
+          <img class="hero__main-img" src="./images/header/ice171.png" alt="Моороженное">
+        </picture>
+      </div>
+
+      <!-- Girl img -->
+      <div class="hero__girl-wrap">
+        <picture>
+          <source media="(min-width:1200px)" srcset="./images/header/girld.png 1x, ./images/header/girld@2x.png 2x">
+          <source media="(min-width:768px)" srcset="./images/header/girlt.png 1x, ./images/header/girlt@2x.png 2x">
+          <img class="hero__girl-img" src="./images/header/girlt.png" alt="Девушка с мороженным">
+        </picture>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+    <!-- Modal form section -->
+    <div data-modal-form class="backdrop is-hidden">
+      <div class="backdrop__modal">
+        <div data-modal-form-close class="backdrop__close">
+          <svg class="backdrop__close-ico">
+            <use href="./images/header/symbol-defs.svg#close1"></use>
+          </svg>
+        </div>
+    
+        <!-- Form -->
+        <form class="form">
+    
+          <p class="form__title">Do you want ice cream?</p>
+          <p class="form__sub-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    
+          <div role="group">
+    
+            <!-- First Name -->
+            <div class="form__field">
+              <label class="form__label" for="name">First name</label>
+              <input class="form__input" type="text" name="name" id="name">
+    
+              <svg class="form__ico">
+                <use href="./images/header/symbol-defs.svg#fname"></use>
+              </svg>
+    
+            </div>
+    
+            <!-- Phone number -->
+            <div class="form__field">
+              <label class="form__label" for="phone">Phone</label>
+              <input class="form__input" type="tel" name="phone" id="phone">
+    
+              <svg class="form__ico">
+                <use href="./images/header/symbol-defs.svg#fphone"></use>
+              </svg>
+    
+            </div>
+    
+            <!-- Chekbox -->
+            <label class="form__checkbox-label">
+              <input class="form__checkbox" type="checkbox" value="conditions" name="conditions">
+              <svg class="form__checkbox-icon">
+                <use href="./images/header/symbol-defs.svg#iconcheck"></use>
+              </svg>
+              Соглашаюсь с рассылкой и принимаю <a class="form__conditions-link" href="">Условия договора</a>
+            </label>
+    
+          </div>
+    
+          <!-- Submit button -->
+          <div class="form__button-block">
+            <button class="btn form__btn" type="submit">Buy now</button>
+          </div>
+    
+        </form>
+    
+      </div>
+    </div>
