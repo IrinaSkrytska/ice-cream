@@ -30,9 +30,9 @@
           <!-- Mobile menu button open/close -->
           <button class="nav__menu-button" type="button" aria-expanded="false" aria-controls="nav__mobile-menu"
             data-menu-button>
-            <svg class="nav__menu-icon" width="20" height="12" aria-label="Переключатель моильного меню">
-              <use class="nav__icon-menu" href="./images/header/symbol-defs.svg#burger"></use>
-              <use class="nav__icon-cross" href="./images/header/symbol-defs.svg#close"></use>
+            <svg width="20" height="12" aria-label="Переключатель моильного меню">
+              <use href="./images/header/symbol-defs.svg#burger"></use>
+              <use href="./images/header/symbol-defs.svg#close"></use>
             </svg>
           </button>
 
@@ -54,7 +54,7 @@
               <button 
               class="mobile-menu__button" 
               type="button"
-              data-modal-form-open
+              data-modal-formmobil-open
               >
               <span class="mobile-menu__button-text">Buy now</span></button>
               <ul class="mobile-menu__list">
@@ -81,9 +81,7 @@
       <div class="hero__title-wrap">
         <!-- Heto tittle -->
         <h1 class="hero__title">
-          ice cream <br>
-          made with <br>
-          <span class="hero__title-decoration">passion</span>
+          ice cream made with <span class="hero__title-decoration">passion</span>
         </h1>
 
         <!-- Hero buttons -->
@@ -109,12 +107,11 @@
 
         <div class="hero__milk-wrap">
           <picture>
-            <source media="(min-width: 1200px)" srcset="./images/header/milkd.png 1x, ./images/header/milkd@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="./images/header/milkt.png 1x, ./images/header/milkt@2x.png 2x">
+            <source media="(min-width: 1200px)" srcset="./images/header/milkd.webp 1x, ./images/header/milkd@2x.webp 2x" type="image/webp">
+            <source media="(min-width: 768px)" srcset="./images/header/milkt.webp 1x, ./images/header/milkt@2x.webp 2x" type="image/webp">
             <img class="hero__milk-img" src="./images/header/milkt.png" alt="Кувшин с молоком">
           </picture>
         </div>
-
 
         <!-- Details milk content -->
         <details class="hero__milk-content">
@@ -123,16 +120,14 @@
           <span class="hero__milk-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
         </details>
 
-
-       
       </div>
 
       <!-- Ice img -->
-      <div class="hero__ice-content-wrap">
+      <div class="hero__ice-wrap">
         <picture>
-          <source media="(min-width: 1200px)" srcset="./images/header/ice236.png 1x, ./images/header/ice236@2x.png 2x">
-          <source media="(min-width: 768px)" srcset="./images/header/ice143.png 1x, ./images/header/ice143@2x.png 2x">
-          <source media="(max-width: 767px)" srcset="./images/header/ice171.png 1x, ./images/header/ice171@2x.png 2x">
+          <source media="(min-width: 1200px)" srcset="./images/header/ice236.webp 1x, ./images/header/ice236@2x.webp 2x" type="image/webp">
+          <source media="(min-width: 768px)" srcset="./images/header/ice143.webp 1x, ./images/header/ice143@2x.webp 2x" type="image/webp">
+          <source media="(max-width: 767px)" srcset="./images/header/ice171.webp 1x, ./images/header/ice171@2x.webp 2x" type="image/webp">
           <img class="hero__main-img" src="./images/header/ice171.png" alt="Моороженное">
         </picture>
       </div>
@@ -140,8 +135,8 @@
       <!-- Girl img -->
       <div class="hero__girl-wrap">
         <picture>
-          <source media="(min-width:1200px)" srcset="./images/header/girld.png 1x, ./images/header/girld@2x.png 2x">
-          <source media="(min-width:768px)" srcset="./images/header/girlt.png 1x, ./images/header/girlt@2x.png 2x">
+          <source media="(min-width:1200px)" srcset="./images/header/girld.webp 1x, ./images/header/girld@2x.webp 2x" type="image/webp">
+          <source media="(min-width:768px)" srcset="./images/header/girlt.webp 1x, ./images/header/girlt@2x.webp 2x" type="image/webp">
           <img class="hero__girl-img" src="./images/header/girlt.png" alt="Девушка с мороженным">
         </picture>
       </div>
