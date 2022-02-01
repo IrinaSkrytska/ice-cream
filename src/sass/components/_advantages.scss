@@ -1,6 +1,5 @@
 .advantages {
   background-color: $background-color__ivory;
-  width: 100%;
   padding: 39px 70px 97px 20px;
 }
 
@@ -52,8 +51,8 @@
   background-image: url(../images/advantages/adv1_1x.png);
 
   @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
     object-fit: contain;
     background-image: url(../images/advantages/adv1_2x.png);
     background-size: contain;
@@ -75,8 +74,8 @@
   background-image: url(../images/advantages/adv2_1x.png);
 
   @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
     background-image: url(../images/advantages/adv2_2x.png);
     background-size: contain;
   }
@@ -97,8 +96,8 @@
   background-image: url(../images/advantages/adv3_1x.png);
 
   @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
     background-image: url(../images/advantages/adv3_2x.png);
     background-size: contain;
   }
@@ -138,13 +137,14 @@
 
 @media screen and (min-width: 1200px) {
   .advantages {
-    width: auto;
+
     padding: 39px 115px 139px 115px;
   }
 
   .advantages__content {
     display: flex;
     align-items: flex-end;
+    justify-content: space-around;
     flex-grow: 1;
   }
 

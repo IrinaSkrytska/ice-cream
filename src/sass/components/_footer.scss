@@ -167,12 +167,12 @@
 @media screen and (min-width: 1200px) {
   .footer {
     padding-top: 165px;
-    width: 100%;
+    /* width: 100%; */
   }
 
   .footer__contacts {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: baseline;
     padding-left: 114px;
     padding-right: 116px;
