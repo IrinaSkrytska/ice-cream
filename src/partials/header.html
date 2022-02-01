@@ -37,7 +37,13 @@
           </button>
 
           <!-- Tablet/Desktop menu button -->
-          <button class="nav__button" type="button">Buy now</button>
+          <button 
+          class="nav__button" 
+          type="button"
+          data-modal-form-open
+          >
+            <span class="nav__button-text">Buy now</span>
+          </button>
 
           <!-- Mobile menu -->
           <div class="mobile-menu" id="nav__mobile-menu" data-menu>
@@ -45,7 +51,12 @@
             <div class="mobile-menu__content">
 
               <!-- mobile menu content -->
-              <button class="mobile-menu__button" type="button">Buy now</button>
+              <button 
+              class="mobile-menu__button" 
+              type="button"
+              data-modal-form-open
+              >
+              <span class="mobile-menu__button-text">Buy now</span></button>
               <ul class="mobile-menu__list">
                 <li class="mobile-menu__item"><a href="#home" class="mobile-menu__link">Home</a></li>
                 <li class="mobile-menu__item"><a href="#advantages" class="mobile-menu__link">About us</a></li>
@@ -76,8 +87,8 @@
         </h1>
 
         <!-- Hero buttons -->
-        <a class="hero__button btn" href="">Products</a>
-        <a class="hero__button btn-revers" href="">How it’s made?</a>
+        <a class="hero__button btn" href="#products">Products</a>
+        <a class="hero__button btn-revers" href="#about">How it’s made?</a>
       </div>
 
 
@@ -104,14 +115,16 @@
           </picture>
         </div>
 
-        <div class="hero__milk-content">
-          <p class="hero__milk-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et</p>
 
-            <!-- Arrow right link -->
-            <a href="" class="hero__arrow-link"></a>
+        <!-- Details milk content -->
+        <details class="hero__milk-content">
+          <summary class="hero__milk-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et set.</summary>
+          <span class="hero__milk-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+        </details>
 
-        </div>
+
+       
       </div>
 
       <!-- Ice img -->
@@ -137,3 +150,63 @@
 
   </div>
 </section>
+
+    <!-- Modal form section -->
+    <div data-modal-form class="backdrop is-hidden">
+      <div class="backdrop__modal">
+        <div data-modal-form-close class="backdrop__close">
+          <svg class="backdrop__close-ico">
+            <use href="./images/header/symbol-defs.svg#close1"></use>
+          </svg>
+        </div>
+    
+        <!-- Form -->
+        <form class="form">
+    
+          <p class="form__title">Do you want ice cream?</p>
+          <p class="form__sub-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    
+          <div role="group">
+    
+            <!-- First Name -->
+            <div class="form__field">
+              <label class="form__label" for="name">First name</label>
+              <input class="form__input" type="text" name="name" id="name">
+    
+              <svg class="form__ico">
+                <use href="./images/header/symbol-defs.svg#fname"></use>
+              </svg>
+    
+            </div>
+    
+            <!-- Phone number -->
+            <div class="form__field">
+              <label class="form__label" for="phone">Phone</label>
+              <input class="form__input" type="tel" name="phone" id="phone">
+    
+              <svg class="form__ico">
+                <use href="./images/header/symbol-defs.svg#fphone"></use>
+              </svg>
+    
+            </div>
+    
+            <!-- Chekbox -->
+            <label class="form__checkbox-label">
+              <input class="form__checkbox" type="checkbox" value="conditions" name="conditions">
+              <svg class="form__checkbox-icon">
+                <use href="./images/header/symbol-defs.svg#iconcheck"></use>
+              </svg>
+              Соглашаюсь с рассылкой и принимаю <a class="form__conditions-link" href="">Условия договора</a>
+            </label>
+    
+          </div>
+    
+          <!-- Submit button -->
+          <div class="form__button-block">
+            <button class="btn form__btn" type="submit">Buy now</button>
+          </div>
+    
+        </form>
+    
+      </div>
+    </div>
