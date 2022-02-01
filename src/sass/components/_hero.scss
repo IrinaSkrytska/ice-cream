@@ -11,7 +11,7 @@
     background-repeat: no-repeat;
     background-color: $background-color__pink;
 
-    @media screen and (max-width: $tablet - 1px) {
+    @media screen and (max-width: 767) {
       max-width: $mobile;
       padding: 0 20px;
     }
@@ -392,7 +392,7 @@
     right: -94px;
     top: -9px;
 
-    @media screen and (max-width: $tablet - 1px) {
+    @media screen and (max-width: 767) {
       background-image: url(../images/header/circle346.png);
       background-size: contain;
       background-repeat: no-repeat;

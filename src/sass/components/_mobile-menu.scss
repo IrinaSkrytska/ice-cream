@@ -1,5 +1,5 @@
 .mobile-menu {
-  @media screen and (max-width: $desktop - 1px) {
+  @media screen and (max-width: 1199px) {
     position: absolute;
     overflow: hidden;
     top: 0;
@@ -15,10 +15,6 @@
 
     transition: opacity 100ms linear, visibility 100ms linear;
   }
-
-  // @media screen and (min-width: $tablet) {
-  //   height: 100vh;
-  // }
 
   @media screen and (min-width: $desktop) {
     display: none;
@@ -48,7 +44,6 @@
 
     @media screen and (min-width: $tablet) {
       width: 254px;
-      // height: 1020px;
     }
   }
 
@@ -69,9 +64,6 @@
     color: $main-color__bright-pink;
     background-color: $main-color__white;
     border-radius: 22px;
-
-    // &::after {
-    // }
 
     &:hover,
     &:focus {
