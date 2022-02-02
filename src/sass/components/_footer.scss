@@ -24,7 +24,6 @@
   transition-property: transform;
 }
 
-
 .footer_title-two {
   display: inline-block;
   font-family: Titan One;
@@ -39,7 +38,6 @@
 
   &:hover {
     transform: scale(1.2);
-
   }
 }
 
@@ -69,7 +67,7 @@
 
   &:focus,
   &:hover {
-    fill: #D41443;
+    fill: #d41443;
     animation: rotateY 1500ms infinite alternate ease-in-out 1000ms;
     animation-delay: 50ms;
     animation-iteration-count: 1;
