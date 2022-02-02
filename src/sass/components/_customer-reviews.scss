@@ -56,10 +56,8 @@
     max-width: 280px;
     padding: 43px 50px 26px 50px;
     margin-bottom: 52px;
-    background-image: url("/images/customers-reviews/upperdots.svg") ; 
-    background-repeat: no-repeat;
-    background-position: left 21px top 28px;
     position: relative;
+    z-index: 1;
     
     @media screen and (min-width:768px) {
         padding: 47px 80px 34px 80px;
@@ -90,12 +88,15 @@
             bottom: -30px;
         }
     }
+
+    
 }
 
 .pattern{
     text-align: center;
     height: 100%;
-    background-image: repeating-linear-gradient(transparent 0px, transparent 28px, #E1E1E1 30px);
+    background-image: repeating-linear-gradient(transparent 0px, transparent 27px, #E1E1E1 29px);
+    
 }
 
 .text{
@@ -111,4 +112,24 @@
         margin-bottom: 15px;
         @include custom-text (16px, 500, 1.86, var(--slider-text-cl));
     } 
+
+    &::before{
+        content: url('/images/customers-reviews/upperdots.svg');
+        color: var(--slider-decor-dots-cl);
+        position: absolute;
+        left:25px;
+        top: 28px;
+        z-index: -1;
+        
+
+        @media screen and (min-width:768px) {
+            left:58px;
+            top: 30px;
+        }
+    
+        @media screen and (min-width:1200px) {
+            left:50px;
+            top: 32px;
+        }
+    }
 }
