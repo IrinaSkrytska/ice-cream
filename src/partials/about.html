@@ -1,83 +1,93 @@
-<section id="about" class="about-section about-overlay">
-  <div class="about-container">
-    <label class="about-section__label">tradition and love</label>
-    <h1 class="about-section__title">how it’s made?</h1>
 
-    <div class="about-section__main-info">
-      <picture>
-        <source
-          media="(min-width: 1200px)"
-          srcset="
-            ./images/about/about-main-pc-pic.png    1x,
-            ./images/about/about-main-pc-pic-2x.png 2x
-          "
-        />
-        <source
-          media="(min-width: 768px)"
-          srcset="
-            ./images/about/about-main-tablet-pic.png    1x,
-            ./images/about/about-main-tablet-pic-2x.png 2x
-          "
-        />
-        <source
-          media="(min-width: 320px)"
-          srcset="
-            ./images/about/about-main-mob-pic.png    1x,
-            ./images/about/about-main-mob-pic-2x.png 2x
-          "
-        />
-        <img src="./images/about/about-main-mob-pic.png" alt="about-main-pic" />
-      </picture>
+<div class="wrapper ">
+    <section id="about" class="about-section about-overlay">
+    
+        <div class="about-container">
+            <label class="about-section__label">tradition and love</label>
+            <h1 class="about-section__title">how it’s made?</h1>
+    
+            <div class="about-section__main-info ">
+    
+                <picture>
+                    <source media="(min-width: 1200px)"
+                        srcset="./images/about/about-main-pc-pic.png 1x, ./images/about/about-main-pc-pic-2x.png 2x">
+                    <source media="(min-width: 768px)"
+                        srcset="./images/about/about-main-tablet-pic.png 1x, ./images/about/about-main-tablet-pic-2x.png 2x">
+                    <source media="(min-width: 320px)"
+                        srcset="./images/about/about-main-mob-pic.png 1x, ./images/about/about-main-mob-pic-2x.png 2x">
+                    <img src="./images/about/about-main-mob-pic.png" alt="about-main-pic">
+                </picture>
+    
+                <div class="about-section__descriptions">
+    
+                    <p class="about-section__first-description">Fusce ut velit laoreet, tempus arcu eu, molestie tortor.
+                        Nam vel justo
+                        cursus, faucibus lorem eget, egestas eros.
+                        Maecenas eleifend erat at justo fringilla.</p>
+    
+                    <p class="about-section__second-description">Curabitur lacinia enim at ex blandit, vel pellentesque
+                        odio elementum.
+                        Mauris rhoncus orci in imperdiet placerat.
+                        Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
+                        tincidunt.
+    
+    
+                        Aliquam erat volutpat. Aenean accumsan.</p>
+    
+    
+    
+                    <button type="button" class="about__button" about-data-modal-open><span
+                            class="about__buttons-symbol">Read more</span></button>
+                </div>
+            </div>
+    
+        </div>
+    
+        <div class="about-backdrop about-is-hidden" about-data-modal>
+    
+            <div class="about-modal">
+                <button about-data-modal-close class="about-modal__close-button">
+                    <svg class="modal__close-icon">
+                        <use href="./images/about/form-sprite.svg#icon-close-button"></use>
+                    </svg>
+                </button>
+    
+                <h3 class="about-modal__title">
+                    What is milk made from?
+                </h3>
+    
+                <p class="about-modal__text">
+                    It would seem a strange question, because everyone knows that a cow gives milk, but take your time
+                </p>
+    
+    
+            </div>
+    
+    
+        </div>
+    
+        <script>
+            (() => {
+                const refs = {
+                    openModalBtn: document.querySelector('[about-data-modal-open]'),
+                    closeModalBtn: document.querySelector('[about-data-modal-close]'),
+                    modal: document.querySelector('[about-data-modal]'),
+                };
 
-      <div class="about-section__descriptions">
-        <p class="about-section__first-description">
-          Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
-          lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
-        </p>
+                refs.openModalBtn.addEventListener('click', toggleModal);
+                refs.closeModalBtn.addEventListener('click', toggleModal);
 
-        <p class="about-section__second-description">
-          Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci
-          in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna
-          maximus. Cras massa nibh, tincidunt. Aliquam erat volutpat. Aenean accumsan.
-        </p>
+                function toggleModal() {
+                    // document.body.classList.toggle('modal-open');
+                    refs.modal.classList.toggle('about-is-hidden');
+                }
+            })();
+        </script>
+    
+    
+    </section>
+</div>
 
-        <button type="button" class="about__button" about-data-modal-open>Read more ></button>
-      </div>
-    </div>
-  </div>
 
-  <div class="about-backdrop about-is-hidden" about-data-modal>
-    <div class="about-modal">
-      <button about-data-modal-close class="about-modal__close-button">
-        <svg class="modal__close-icon">
-          <use href="./images/about/form-sprite.svg#icon-close-button"></use>
-        </svg>
-      </button>
 
-      <h3 class="about-modal__title">What is milk made from?</h3>
 
-      <p class="about-modal__text">
-        It would seem a strange question, because everyone knows that a cow gives milk, but take
-        your time
-      </p>
-    </div>
-  </div>
-
-  <script>
-    (() => {
-      const refs = {
-        openModalBtn: document.querySelector('[about-data-modal-open]'),
-        closeModalBtn: document.querySelector('[about-data-modal-close]'),
-        modal: document.querySelector('[about-data-modal]'),
-      };
-
-      refs.openModalBtn.addEventListener('click', toggleModal);
-      refs.closeModalBtn.addEventListener('click', toggleModal);
-
-      function toggleModal() {
-        // document.body.classList.toggle('modal-open');
-        refs.modal.classList.toggle('about-is-hidden');
-      }
-    })();
-  </script>
-</section>
