@@ -31,8 +31,8 @@
           <button class="nav__menu-button" type="button" aria-expanded="false" aria-controls="nav__mobile-menu"
             data-menu-button>
             <svg width="20" height="12" aria-label="Переключатель моильного меню">
-              <use href="./images/header/symbol-defs.svg#burger"></use>
-              <use href="./images/header/symbol-defs.svg#close"></use>
+              <use class="nav__icon-menu" href="./images/header/symbol-defs.svg#burger"></use>
+              <use class="nav__icon-cross" href="./images/header/symbol-defs.svg#close"></use>
             </svg>
           </button>
 
@@ -166,7 +166,7 @@
             <!-- First Name -->
             <div class="form__field">
               <label class="form__label" for="name">First name</label>
-              <input class="form__input" type="text" name="name" id="name">
+              <input class="form__input" type="text" name="name" id="name" required>
     
               <svg class="form__ico">
                 <use href="./images/header/symbol-defs.svg#fname"></use>
@@ -177,7 +177,7 @@
             <!-- Phone number -->
             <div class="form__field">
               <label class="form__label" for="phone">Phone</label>
-              <input class="form__input" type="tel" name="phone" id="phone">
+              <input class="form__input" type="tel" name="phone" id="phone" required>
     
               <svg class="form__ico">
                 <use href="./images/header/symbol-defs.svg#fphone"></use>
