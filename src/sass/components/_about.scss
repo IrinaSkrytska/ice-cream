@@ -62,12 +62,12 @@
   }
   @media screen and (min-width: 1201px) {
     background-size: contain;
-    background-position: bottom -50% right 25%;
+    //background-position: bottom -50% right 25%;
     background-image: url(../images/about/about-bg-milk-pc.png);
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-position: bottom -50% right 25%;
+      //background-position: bottom -50% right 25%;
       background-image: url(../images/about/about-bg-milk-pc-2x.png);
     }
   }
