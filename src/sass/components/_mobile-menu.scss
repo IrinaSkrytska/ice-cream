@@ -5,8 +5,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    height: 502px;
+    height: 100vh;
     background-color: rgba(0, 0, 0, 0.2);
     z-index: 998;
 
@@ -15,10 +14,6 @@
     pointer-events: none;
 
     transition: opacity 100ms linear, visibility 100ms linear;
-  }
-
-  @media screen and (min-width: $tablet) {
-    height: 1020px;
   }
 
   @media screen and (min-width: $desktop) {
@@ -37,7 +32,7 @@
     right: 0;
     top: 0;
     padding: 60px 0;
-    height: 100%;
+    height: 100vh;
     text-align: center;
     background-color: $mob-menu-background;
     filter: drop-shadow(-8px 0px 20px rgba(0, 0, 0, 0.25));
@@ -49,7 +44,6 @@
 
     @media screen and (min-width: $tablet) {
       width: 254px;
-      height: 1020px;
     }
   }
 
@@ -70,9 +64,6 @@
     color: $main-color__bright-pink;
     background-color: $main-color__white;
     border-radius: 22px;
-
-    // &::after {
-    // }
 
     &:hover,
     &:focus {
