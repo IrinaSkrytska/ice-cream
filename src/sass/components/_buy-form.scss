@@ -5,7 +5,6 @@
   left: 0;
   width: 100%;
   height: 100%;
-
   padding: 93px 20px 0 20px;
   overflow-y: scroll;
 
@@ -18,15 +17,11 @@
     visibility: hidden;
   }
 
-  &.is-hidden &__modal {
-  }
-
   &__modal {
     position: relative;
     padding: 30px 20px 40px 20px;
     background-color: $background-color__ivory;
     border-radius: 5px;
-
     @media screen and (min-width: $mobile) {
       position: absolute;
       padding: 40px 40px 50px 40px;
@@ -119,6 +114,7 @@
     margin: 0;
     padding: 0 0 0 42px;
     color: $main-color__grey;
+    // background-color: $background-color__ivory;
 
     border: 1px solid rgba(255, 165, 186, 0.3);
     border-radius: 4px;
@@ -196,6 +192,8 @@
     margin-bottom: 30px;
     font-size: 12px;
     line-height: 1.15;
+
+    color: $main-color__grey;
   }
 
   &__checkbox {
@@ -230,7 +228,7 @@
   }
 
   &__conditions-link {
-    color: $main-color__grey;
+    color: $main-color__pale-pink;
     margin-left: 5px;
   }
 

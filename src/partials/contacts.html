@@ -1,18 +1,16 @@
-
 <section class="contacts" id="contacts">
     <div class="container contacts-position">
-
         <h2 class="hidden">Contacts</h2>
         <ul class="contacts-list">
-
             <li class="contacts-element">
                 <ul class="contacts-item">
                     <li class="contacts-item--adress">
                         <span class="contacts-item__name-cafe">CAFE</span>
                         <span class="contacts-item__title">Chicago</span>
-                        <p class="contacts-item__description">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+                        <p class="contacts-item__description">
+                            Fusce ut velit laoreet, tempus arcu molestie vulputate
+                        </p>
                         <div class="contacts-item__line"></div>
-
                     </li>
                     <li class="contact-item--schedule">
                         <span class="contacts-item__day">Monday - Friday</span>
@@ -27,15 +25,15 @@
                     </li>
                 </ul>
             </li>
-
             <li class="contacts-element">
                 <ul class="contacts-item">
                     <li class="contacts-item--adress">
                         <span class="contacts-item__name-food">FOOD TRUCK</span>
                         <span class="contacts-item__title">Los Angeles</span>
-                        <p class="contacts-item__description">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+                        <p class="contacts-item__description">
+                            Fusce ut velit laoreet, tempus arcu molestie vulputate
+                        </p>
                         <div class="contacts-item__line"></div>
-
                     </li>
                     <li class="contacts-item--schedule">
                         <span class="contacts-item__day">Monday - Friday</span>
@@ -50,13 +48,14 @@
                     </li>
                 </ul>
             </li>
-
             <li class="contacts-element">
                 <ul class="contacts-item">
                     <li class="contacts-item--adress">
                         <span class="contacts-item__name-cafe">CAFE</span>
                         <span class="contacts-item__title">New York</span>
-                        <p class="contacts-item__description">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+                        <p class="contacts-item__description">
+                            Fusce ut velit laoreet, tempus arcu molestie vulputate
+                        </p>
                         <div class="contacts-item__line"></div>
                     </li>
                     <li class="contacts-item--schedule">
@@ -72,14 +71,13 @@
                     </li>
                 </ul>
             </li>
-
         </ul>
         <div class="contacts-buttons">
             <div></div>
             <button type="button" class="contacts-buttons__location" contacts-modal-open> <span class="contacts-buttons__location-text">Our
                     Locations
                 </span></button>
-            <button type="button" class="contacts-buttons_franchise" contacts-modal-open> <span
+            <button type="button" class="contacts-buttons_franchise" contacts-modal-open-franshise> <span
                     class="contacts-buttons_franchise-text">Franchise
                 </span></button>
         </div>
@@ -105,12 +103,16 @@
             (() => {
                     const refs = {
                         openModalBtn: document.querySelector('[contacts-modal-open]'),
+                        openfranshiseModalBtn: document.querySelector('[contacts-modal-open-franshise]'),
                         closeModalBtn: document.querySelector('[contacts-modal-close]'),
+                        closefranshiseModalBtn: document.querySelector('[contacts-modal-close-franshise]'),
                         modal: document.querySelector('[contacts-modal]'),
                     };
 
                     refs.openModalBtn.addEventListener('click', toggleModal);
+                    refs.openfranshiseModalBtn.addEventListener('click', toggleModal);
                     refs.closeModalBtn.addEventListener('click', toggleModal);
+                    refs.closefranshiseModalBtn.addEventListener('click', toggleModal);
 
                     function toggleModal() {
                         refs.modal.classList.toggle('is-hidden');
