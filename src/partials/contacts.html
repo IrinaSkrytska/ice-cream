@@ -27,7 +27,6 @@
           </li>
         </ul>
       </li>
-
       <li class="contacts-element">
         <ul class="contacts-item">
           <li class="contacts-item--adress">
@@ -53,7 +52,6 @@
           </li>
         </ul>
       </li>
-
       <li class="contacts-element">
         <ul class="contacts-item">
           <li class="contacts-item--adress">
@@ -81,12 +79,53 @@
       </li>
     </ul>
     <div class="contacts-buttons">
-      <button type="button" class="contacts-buttons__location">
+      <div></div>
+      <button type="button" class="contacts-buttons__location" contacts-modal-open>
         <span class="contacts-buttons__location-text">Our Locations </span>
       </button>
-      <button type="button" class="contacts-buttons_franchise">
+      <button type="button" class="contacts-buttons_franchise" contacts-modal-open-franshise>
         <span class="contacts-buttons_franchise-text">Franchise </span>
       </button>
     </div>
   </div>
+  <!-- modal window  start -->
+  <div class="contacts-backdrop is-hidden" contacts-modal>
+    <div class="contacts-modal">
+      <div class="modal__close">
+        <button type="button" class="modal__close-button" contacts-modal-close>
+          <svg class="modal__close__link">
+            <use href="./images/contacts-images/modal-icons.svg#modal-icon-x"></use>
+          </svg>
+        </button>
+      </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d190332.06979881172!2d-87.86155658359377!3d41.808083300000014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e314a6d271d0d%3A0xae73687058b6254f!2sRolling%20Chicago%20Cafe!5e0!3m2!1suk!2sua!4v1643755478084!5m2!1suk!2sua"
+        width="306"
+        height="440"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </div>
+  </div>
+  <!-- modal window end -->
+  <script>
+    (() => {
+      const refs = {
+        openModalBtn: document.querySelector('[contacts-modal-open]'),
+        openfranshiseModalBtn: document.querySelector('[contacts-modal-open-franshise]'),
+        closeModalBtn: document.querySelector('[contacts-modal-close]'),
+        closefranshiseModalBtn: document.querySelector('[contacts-modal-close-franshise]'),
+        modal: document.querySelector('[contacts-modal]'),
+      };
+
+      refs.openModalBtn.addEventListener('click', toggleModal);
+      refs.openfranshiseModalBtn.addEventListener('click', toggleModal);
+      refs.closeModalBtn.addEventListener('click', toggleModal);
+
+      function toggleModal() {
+        refs.modal.classList.toggle('is-hidden');
+      }
+    })();
+  </script>
 </section>
