@@ -228,6 +228,12 @@
   color: $main-color__bright-pink;
   background-color: $main-color__white;
 
+  //   &:hover,
+  //   &:focus {
+  //     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+  //       rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  //   }
+
   border-radius: 22px;
   @media screen and (min-width: 320px) and (max-width: 767px) {
     font-size: 14px;
