@@ -6,7 +6,7 @@
   "homepage": "https://ice-studio.vercel.app",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /ice-studio.vercel.app/"
+    "build": "parcel build src/*.html"
   },
   "repository": {
     "type": "git",
